@@ -4,15 +4,15 @@
 
 ## Povzetek
 
-Razvil bom aplikacijo, ki bo uporabniku pomagala najti igro za igranje. Omogočil bom iskanje po imenu, filtre in sortiranje, uporabnik pa bo lahko primerjal tudi cene. V aplikacijo bom povezal Steam račun, da bom priporočila lahko prilagodil uporabnikovi knjižnici, času igranja in prejšnjim izbiram.
+Razvil bom aplikacijo, ki bo uporabniku pomagala najti igro za igranje. Omogočil bom iskanje po imenu, filtre in sortiranje, uporabnik pa bo lahko primerjal tudi cene. V aplikacijo bom povezal Steam račun, da bom priporocila lahko prilagodil uporabnikovi knjižnici, času igranja in prejsnjim izbiram.
 
 ## Panoga in uporabljene storitve
 
-Projekt bom delal na področju videoiger. Povezal bom tri storitve:
+Projekt bom delal na podrocju videoiger. Povezal bom tri storitve:
 
 - **RAWG** bom uporabil za podatke o igrah, kot so ime, opis, zvrst, platforme, datum izdaje, ocena in slika.
 - **CheapShark** bom uporabil za iskanje cen in popustov v spletnih trgovinah.
-- **Steam Web API** bom uporabil za pridobitev seznama iger in časa igranja iz uporabnikove Steam knjižnice. Te podatke bom uporabil pri priporočilih.
+- **Steam Web API** bom uporabil za pridobitev seznama iger in časa igranja iz uporabnikove Steam knjiznice. Te podatke bom uporabil pri priporocilih.
 
 ## Uporabnost ideje
 
@@ -27,7 +27,7 @@ Podobne funkcije že obstajajo v različnih storitvah. Moja ideja je, da bom pri
 Z RAWG bom iskal igre in pridobival njihove opise, zvrsti, platforme, datum izdaje, ocene in slike.
 
 - Dokumentacija: [RAWG API docs](https://api.rawg.io/docs/)
-- V zahtevo bom poslal iskalno besedilo, želene filtre in API ključ. Za podroben opis bom uporabil RAWG ID igre.
+- V zahtevo bom poslal iskalno besedilo, želene filtre in API kljuc. Za podroben opis bom uporabil RAWG ID igre.
 - Odgovore in slike RAWG bom v aplikaciji navedel kot vir.
 
 ### CheapShark
@@ -40,11 +40,11 @@ S CheapShark bom poiskal aktualne ponudbe za računalniške igre v različnih sp
 
 ### Steam Web API
 
-Steam bom povezal, da bom priporočila lahko pripravil na podlagi uporabnikove knjižnice in časa igranja.
+Steam bom povezal, da bom priporocila lahko pripravil na podlagi uporabnikove knjižnice in časa igranja.
 
 - Dokumentacija: [Steam Web API, IPlayerService](https://partner.steamgames.com/doc/webapi/IPlayerService)
-- V zahtevi bom uporabil Steam ID in API ključ.
-- Prejel bom seznam iger, njihove ID-je in čas igranja. Podatki o igrah morajo biti vidni v nastavitvah zasebnosti Steam profila.
+- V zahtevi bom uporabil Steam ID in API kljuc.
+- Prejel bom seznam iger, njihove ID-je in cas igranja. Podatki o igrah morajo biti vidni v nastavitvah zasebnosti Steam profila.
 
 ## Podatki, ki jih bom prenašal
 
