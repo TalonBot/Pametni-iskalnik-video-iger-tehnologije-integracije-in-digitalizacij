@@ -6,7 +6,7 @@
 
 Ideja je narediti aplikacijo, ki pomaga najti igre za igranje. Uporabnik bo lahko iskal po imenu, filtriral in sortiral igre ter primerjal njihove cene. Aplikacija bo znala tudi predlagati igre glede na to, kaj je uporabnik prej označil ali ocenil.
 
-Za začetek bi uporabnik svoje priljubljene igre izbral v aplikaciji. Morda bomo pozneje dodali še povezavo s Steam računom, da bodo priporočila upoštevala igre v njegovi knjižnici in čas igranja.
+Za začetek bi uporabnik svoje priljubljene igre izbral v aplikaciji. Mogoce bom pozneje dodal še povezavo s Steam računom, da bodo priporočila upoštevala igre v njegovi knjižnici in čas igranja.
 
 ## Panoga in uporabljene storitve
 
