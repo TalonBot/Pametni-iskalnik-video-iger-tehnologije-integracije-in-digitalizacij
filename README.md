@@ -4,88 +4,84 @@
 
 ## Povzetek
 
-Ideja je narediti aplikacijo, ki pomaga najti igre za igranje. Uporabnik bo lahko iskal po imenu, filtriral in sortiral igre ter primerjal njihove cene. Aplikacija bo znala tudi predlagati igre glede na to, kaj je uporabnik prej označil ali ocenil.
-
-Za začetek bi uporabnik svoje priljubljene igre izbral v aplikaciji. Mogoce bom pozneje dodal še povezavo s Steam računom, da bodo priporočila upoštevala igre v njegovi knjižnici in čas igranja.
+Razvil bom aplikacijo, ki bo uporabniku pomagala najti igro za igranje. Omogočil bom iskanje po imenu, filtre in sortiranje, uporabnik pa bo lahko primerjal tudi cene. V aplikacijo bom povezal Steam račun, da bom priporočila lahko prilagodil uporabnikovi knjižnici, času igranja in prejšnjim izbiram.
 
 ## Panoga in uporabljene storitve
 
-Projekt spada na področje videoiger in spletnih storitev za iskanje ter priporočanje izdelkov. Aplikacija bo združila podatke dveh storitev:
+Projekt bom delal na področju videoiger. Povezal bom tri storitve:
 
-- **RAWG** bo dal osnovne podatke o igrah, na primer ime, opis, zvrst, platforme, datum izdaje, oceno in sliko.
-- **CheapShark** bo dal podatke o cenah in popustih v spletnih trgovinah.
-- **Steam Web API** je možna dodatna storitev za osebna priporočila. Začetna različica lahko deluje tudi brez povezave s Steamom.
+- **RAWG** bom uporabil za podatke o igrah, kot so ime, opis, zvrst, platforme, datum izdaje, ocena in slika.
+- **CheapShark** bom uporabil za iskanje cen in popustov v spletnih trgovinah.
+- **Steam Web API** bom uporabil za pridobitev seznama iger in časa igranja iz uporabnikove Steam knjižnice. Te podatke bom uporabil pri priporočilih.
 
-RAWG in CheapShark sta glavni storitvi prve različice. Aplikacija bo podatke o isti igri združila po naslovu, če je na voljo, pa ji bo pri povezovanju pomagal tudi Steam App ID.
+## Uporabnost ideje
 
-## Kaj je uporabno pri ideji
+Uporabniku ne bo treba posebej iskati podatkov o igri na eni strani in cen na drugi. V aplikaciji, ki jo bom razvil, bo lahko našel igre, primerjal ponudbe in dobil priporočila glede na igre, ki jih že ima ali jih veliko igra. Algoritem bom zasnoval tako, da bo upošteval prejšnje izbire, ocene in zvrsti priljubljenih iger.
 
-Uporabniku ne bo treba posebej iskati podatkov o igri na eni strani in cen na drugi. Na enem mestu bo lahko našel igro, videl osnovne informacije in primerjal ponudbe. Če bo aplikacija poznala njegove prejšnje izbire, mu bo lahko pokazala tudi podobne igre.
-
-Sama ideja priporočil ni nujno nova, uporabna pa je povezava priporočil, običajnega iskanja in primerjave cen v eni aplikaciji. Priporočila lahko najprej temeljijo na igrah, ki jih uporabnik označi ali oceni v aplikaciji.
+Podobne funkcije že obstajajo v različnih storitvah. Moja ideja je, da bom priporočila, običajno iskanje in primerjavo cen združil na enem mestu.
 
 ## Storitve in dokumentacija
 
 ### RAWG
 
-RAWG je podatkovna zbirka videoiger.
+Z RAWG bom iskal igre in pridobival njihove opise, zvrsti, platforme, datum izdaje, ocene in slike.
 
 - Dokumentacija: [RAWG API docs](https://api.rawg.io/docs/)
-- Aplikacija bo poslala iskalno besedilo in po želji filter, kot sta zvrst ali platforma. Za podroben opis izbrane igre bo lahko poslala še njen RAWG ID.
-- Za uporabo API-ja potrebujemo ključ. V aplikaciji bomo navedli RAWG kot vir podatkov in slik.
+- V zahtevo bom poslal iskalno besedilo, želene filtre in API ključ. Za podroben opis bom uporabil RAWG ID igre.
+- Odgovore in slike RAWG bom v aplikaciji navedel kot vir.
 
 ### CheapShark
 
-CheapShark zbira ponudbe računalniških iger iz več spletnih trgovin.
+S CheapShark bom poiskal aktualne ponudbe za računalniške igre v različnih spletnih trgovinah.
 
 - Dokumentacija: [CheapShark API docs](https://apidocs.cheapshark.com/)
-- Aplikacija bo poslala naslov igre ali Steam App ID in poiskala aktualne ponudbe.
-- Ključ API ni potreben. Podatki vključujejo trgovino, ceno, popust in povezavo do ponudbe. Cene so v ameriških dolarjih.
+- V zahtevo bom poslal naslov igre ali Steam App ID.
+- Prejel bom ime igre, trgovino, trenutno in običajno ceno, popust ter povezavo do ponudbe. API ključa ne potrebujem, cene pa so v ameriških dolarjih.
 
 ### Steam Web API
 
-Steam bi povezali, če bomo hoteli priporočila prilagoditi knjižnici in času igranja uporabnika.
+Steam bom povezal, da bom priporočila lahko pripravil na podlagi uporabnikove knjižnice in časa igranja.
 
 - Dokumentacija: [Steam Web API, IPlayerService](https://partner.steamgames.com/doc/webapi/IPlayerService)
-- Aplikacija bi poslala Steam ID in API ključ, Steam pa bi lahko vrnil seznam iger in čas igranja.
-- Podatki o igrah morajo biti uporabniku vidni v nastavitvah zasebnosti. Če povezava ne bo delovala ali je ne bomo vključili, bo uporabnik igre označil sam v aplikaciji.
+- V zahtevi bom uporabil Steam ID in API ključ.
+- Prejel bom seznam iger, njihove ID-je in čas igranja. Podatki o igrah morajo biti vidni v nastavitvah zasebnosti Steam profila.
 
-## Podatki, ki se bodo prenašali
+## Podatki, ki jih bom prenašal
 
-Storitve bodo prejemale zahteve in vračale odgovore v obliki **JSON**. Ne prenašamo Wordovih ali drugih dokumentov; prenašajo se podatki o igrah in ponudbah.
+Vse tri storitve bom klical prek API-jev. Zahteve in odgovori bodo v obliki **JSON**. Ne bom prenašal Wordovih ali drugih dokumentov, ampak podatke o igrah, uporabnikovih izbirah in ponudbah.
 
-- **RAWG:** zahteva vsebuje iskalno besedilo, filtre in API ključ. Odgovor lahko vsebuje igre s polji `id`, `name`, `description`, `released`, `rating`, `genres`, `platforms` in `background_image`. Identifikator in ocena sta številska, ime in opis sta besedilo, zvrsti in platforme so seznami, datum je zapisan kot datum, slika pa kot spletni naslov.
-- **CheapShark:** zahteva vsebuje naslov igre ali Steam App ID. Odgovor lahko vsebuje `title`, `steamAppID`, `storeID`, `dealID`, `salePrice`, `normalPrice`, `savings` in povezavo do ponudbe. ID-ji so nizi, cene in prihranek pa storitev pošlje kot besedilne vrednosti; aplikacija jih pretvori v števila za primerjavo.
-- **Steam (če ga vključimo):** zahteva vsebuje Steam ID in API ključ. Odgovor v JSON lahko vsebuje ID igre (`appid`), ime in čas igranja (`playtime_forever`).
-- **Izbire v aplikaciji:** uporabnik lahko izbere ali oceni igro ter vnese iskalni niz in filtre. Aplikacija te podatke uporabi za predloge in prikaz rezultatov.
+- **RAWG:** poslal bom iskalno besedilo, filtre in ključ API. Odgovor lahko vsebuje `id`, `name`, `description`, `released`, `rating`, `genres`, `platforms` in `background_image`. ID in ocena sta številska, ime in opis sta besedilo, zvrsti in platforme so seznami, datum je datum, slika pa spletni naslov.
+- **CheapShark:** poslal bom naslov igre ali Steam App ID. Odgovor lahko vsebuje `title`, `steamAppID`, `storeID`, `dealID`, `salePrice`, `normalPrice`, `savings` in povezavo do ponudbe. ID-je bom obravnaval kot nize, cene in popuste, ki pridejo kot besedilo, pa bom pretvoril v števila za primerjavo.
+- **Steam:** poslal bom Steam ID in API ključ. V JSON odgovoru bom uporabil ID igre (`appid`), ime igre in čas igranja (`playtime_forever`).
+- **Moja aplikacija:** zabeležil bom igre, ki jih uporabnik označi ali oceni, ter njegove iskalne nize in filtre. Te podatke bom uporabil za prilagojena priporočila.
 
 ## Akterji
 
-- **Uporabnik** išče igre, izbere filtre, označi priljubljene igre in odpre povezavo do ponudbe.
-- **Aplikacija** pošlje poizvedbe, združi podatke RAWG in CheapShark ter pripravi predloge.
-- **RAWG** vrne podatke o igrah.
-- **CheapShark** vrne podatke o cenah in ponudbah.
-- **Steam** lahko vrne uporabnikovo knjižnico in čas igranja, če bomo povezavo dodali in so podatki vidni.
+- **Jaz** bom razvil aplikacijo in algoritem za priporočanje iger.
+- **Uporabnik** bo iskal igre, nastavljal filtre, povezal Steam račun ter odpiral prikazane ponudbe.
+- **RAWG** mi bo vrnil podatke o igrah.
+- **CheapShark** mi bo vrnil podatke o cenah in ponudbah.
+- **Steam Web API** mi bo vrnil podatke o uporabnikovi knjižnici in času igranja, če bodo ti podatki vidni.
 
-## Kako bodo storitve sodelovale
+## Kako bom povezal storitve
 
 ```text
-Uporabnik vnese iskanje ali izbere svoje priljubljene igre
+Uporabnik izbere filtre in poveže Steam račun
                          |
                          v
-                Aplikacija poišče igre
-                    /           \
-                   v             v
-             RAWG: podatki    CheapShark: cene
-                    \           /
-                     v         v
-             Aplikacija združi rezultate
+                Moja aplikacija
+                 /      |      \
+                v       v       v
+             RAWG    Steam API  CheapShark
+          podatki o   igre in    cene in
+             igrah    čas igranja ponudbe
+                \       |       /
+                 v      v      v
+            Združim podatke in pripravim
+                iskanje ter priporočila
                          |
                          v
-        Igre, priporočila in povezave do ponudb
-
-Steam (možno pozneje) ---> seznam iger in čas igranja
-                           za osebna priporočila
+        Uporabnik vidi igre in njihove cene
 ```
 
 ## Viri
