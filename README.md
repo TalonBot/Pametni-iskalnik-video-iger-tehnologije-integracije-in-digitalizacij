@@ -55,4 +55,5 @@ Na podlagi teh podatkov aplikacija pokaže igre, ki bi uporabnika lahko zanimale
 - [RAWG API dokumentacija](https://api.rawg.io/docs/)
 - [CheapShark API dokumentacija](https://apidocs.cheapshark.com/)
 - [Steam Web API – IPlayerService](https://partner.steamgames.com/doc/webapi/IPlayerService)
-- ChatGPT (OpenAI), pomoč pri oblikovanju ideje in besedila načrta, 12. 10. 2026.
+- ChatGPT (OpenAI), pomoč pri oblikovanju besedila načrta, 12. 10. 2026.
+- 
