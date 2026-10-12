@@ -31,7 +31,7 @@ Vir cen in akcij za računalniške igre v različnih spletnih trgovinah.
 - Uporabili bomo iskanje igre po naslovu in seznam ponudb.
 - API vrne na primer trgovino, trenutno in običajno ceno, popust ter povezavo do ponudbe. Ključ ni potreben.
 
-### Steam Web API – možnost za priporočila
+### Steam Web API
 
 Steam bi uporabili, če bomo želeli priporočila prilagoditi uporabnikovi knjižnici in času igranja. Podatke o uporabnikovih igrah lahko dobimo, kadar so ti podatki na profilu javno vidni.
 
