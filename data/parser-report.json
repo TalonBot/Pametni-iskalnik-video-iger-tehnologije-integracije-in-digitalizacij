@@ -1,0 +1,115 @@
+{
+  "runId": "b2d41629-fa89-41cc-9e09-cb8267cb664e",
+  "startedAt": "2026-10-26T21:03:09.669Z",
+  "updatedAt": "2026-10-26T21:13:29.982Z",
+  "finished": true,
+  "scope": "Vse igre iz izbranega javnega Steamovega seznama ponudb (regija SI).",
+  "expectedRowsAtStart": 2110,
+  "expectedRowsAtEnd": 2110,
+  "visitedPages": 22,
+  "rowsSeen": 2110,
+  "uniqueGames": 2096,
+  "duplicates": 0,
+  "skippedRows": 14,
+  "listingComplete": true,
+  "detailsRequested": true,
+  "allDetailsAccessible": true,
+  "detailCounts": {
+    "pending": 0,
+    "ok": 2096,
+    "unavailable": 0,
+    "error": 0
+  },
+  "coverage": {
+    "appId": {
+      "present": 2096,
+      "missing": 0
+    },
+    "name": {
+      "present": 2096,
+      "missing": 0
+    },
+    "description": {
+      "present": 2096,
+      "missing": 0
+    },
+    "about": {
+      "present": 2076,
+      "missing": 20
+    },
+    "genres": {
+      "present": 2094,
+      "missing": 2
+    },
+    "platforms": {
+      "present": 2096,
+      "missing": 0
+    },
+    "releaseDate": {
+      "present": 2096,
+      "missing": 0
+    },
+    "price": {
+      "present": 2096,
+      "missing": 0
+    },
+    "originalPrice": {
+      "present": 2094,
+      "missing": 2
+    },
+    "currency": {
+      "present": 2094,
+      "missing": 2
+    },
+    "discount": {
+      "present": 2096,
+      "missing": 0
+    },
+    "rating": {
+      "present": 2033,
+      "missing": 63
+    },
+    "reviewCount": {
+      "present": 2033,
+      "missing": 63
+    },
+    "image": {
+      "present": 2096,
+      "missing": 0
+    },
+    "developers": {
+      "present": 2094,
+      "missing": 2
+    },
+    "publishers": {
+      "present": 2094,
+      "missing": 2
+    },
+    "tags": {
+      "present": 2096,
+      "missing": 0
+    },
+    "features": {
+      "present": 2096,
+      "missing": 0
+    },
+    "languages": {
+      "present": 2096,
+      "missing": 0
+    },
+    "screenshots": {
+      "present": 2096,
+      "missing": 0
+    },
+    "requirements": {
+      "present": 2096,
+      "missing": 0
+    },
+    "metacritic": {
+      "present": 437,
+      "missing": 1659
+    }
+  },
+  "limitation": "Javni seznam se med zajemom spreminja. Nedostopna polja ostanejo null oziroma prazni seznami; zajem ne potrjuje popolnosti celotnega Steamovega kataloga.",
+  "reproducedFromSavedHtmlAt": "2026-10-26T21:13:29.982Z"
+}

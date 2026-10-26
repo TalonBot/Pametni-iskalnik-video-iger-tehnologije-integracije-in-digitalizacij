@@ -14,3 +14,10 @@ coverage/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Local parser intermediates
+data/raw/
+data/*.tmp
+
+data/checkpoint.json
+data/parser.lock

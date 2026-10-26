@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lokalni iskalnik videoiger s podatki, razčlenjenimi iz spletnih strani Steam.">
+  <title>PLAY / Pametni iskalnik video iger</title>
+  <link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/" aria-label="PLAY, začetna stran"><span class="brand-icon">P<span>↗</span></span> PLAY<span class="brand-dot">/</span></a><span class="project-name">PAMETNI ISKALNIK VIDEO IGER</span><span class="local"><i></i> LOKALNA APLIKACIJA</span></header>
+  <main>
+    <section class="hero"><div class="eyebrow"><span>01 / ODKRIVAJ</span><span>STEAM STORE · HTML PARSER</span></div><div class="hero-content"><div><h1>Naslednja igra.<br><span>Tvoja izbira.</span></h1><p>Manj iskanja. Več igranja. Razišči igre, primerjaj cene<br class="desktop"> in poišči ponudbo za svojo naslednjo pustolovščino.</p></div><div class="hero-mark" aria-hidden="true">↗<span>PRESS START TO DISCOVER</span></div></div><div class="hero-footer"><span>RESNIČNI PODATKI. NOVA ODKRITJA.</span><a href="#library">Razišči zbirko <span>↓</span></a></div></section>
+    <section class="stats" aria-label="Pregled zbirke"><div><span class="stat-label">IGER V ZBIRKI</span><strong id="total">—</strong></div><div><span class="stat-label">NAJVEČJI POPUST</span><strong id="max-discount">—</strong></div><div><span class="stat-label">NAJNIŽJA CENA</span><strong id="min-price">—</strong></div><div class="update-stat"><span class="stat-label">ZADNJI ZAJEM</span><strong id="updated">—</strong><span>Vir: Steam · regija SI · EUR</span></div></section>
+    <section id="library" class="library"><div class="section-heading"><div><div class="eyebrow">TVOJ NASLEDNJI FAVORIT</div><h2>Razišči igre<span id="result-count">0</span></h2></div><div class="actions"><a class="button quiet" id="download" href="/api/games" download="games.json">JSON <span>↙</span></a><button class="button" id="refresh">↻ <span>Osveži podatke</span></button></div></div>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <details class="parser-report" id="parser-report"><summary>Poročilo parserja · dokaz zajema</summary><div id="report-content">Poročilo še ni na voljo.</div><a class="button quiet" href="/api/report" download="parser-report.json">Prenesi poročilo JSON ↙</a></details>
+      <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Poišči svojo naslednjo igro …" aria-label="Išči po naslovu ali opisu"><kbd>/</kbd></label><label class="select-wrap"><span>RAZVRSTI PO</span><select id="sort" aria-label="Razvrsti igre"><option value="popular">Priljubljenosti</option><option value="price-asc">Ceni: od najnižje</option><option value="price-desc">Ceni: od najvišje</option><option value="discount">Največjem popustu</option><option value="rating">Najboljši oceni</option><option value="newest">Datumu izdaje</option><option value="name">Naslovu: A–Ž</option></select></label></div>
+      <div class="filter-row"><div class="filter-controls"><label><span class="sr-only">Zvrst</span><select id="genre"><option value="">Vse zvrsti</option></select></label><label><span class="sr-only">Platforma</span><select id="platform"><option value="">Vse platforme</option><option>Windows</option><option>macOS</option><option>Linux</option></select></label><label class="price-limit">Do <input type="number" min="0" step="1" id="max-price" placeholder="∞" aria-label="Najvišja cena v evrih"> €</label><label class="check"><input type="checkbox" id="high-rating"> Ocena 90 % +</label></div><button id="reset" class="text-button">Počisti filtre ↗</button></div>
+      <div class="results-meta"><span id="showing">Nalagam zbirko …</span><span>IZBRANE PONUDBE NA STEAMU</span></div>
+      <div class="game-grid" id="games" aria-label="Igre"></div><div id="empty" class="empty" hidden><span>∅</span><h3>Tu še ni tvoje igre.</h3><p id="empty-message">Poskusi drug iskalni niz ali sprosti filtre.</p><button class="button" id="empty-reset">Počisti filtre</button></div>
+      <button class="button quiet" id="load-more" hidden>Prikaži še 60 iger ↓</button>
+      <p class="data-note">Cene in popusti veljajo ob času zajema ter se lahko spremenijo. Ocena je delež pozitivnih uporabniških ocen na Steamu. Nedostopni podatki so označeni z —.</p>
+    </section>
+  </main><footer><a class="brand" href="/">PLAY /</a><span>Tehnologije integracije in digitalizacij · Tilen Gabor</span><a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">Podatki: Steam ↗</a></footer>
+  <dialog id="detail"><button class="close-dialog" aria-label="Zapri podrobnosti">×</button><div id="detail-content"></div></dialog>
+</body></html>

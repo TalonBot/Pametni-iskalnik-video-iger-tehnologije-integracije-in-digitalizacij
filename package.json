@@ -1,0 +1,34 @@
+{
+  "name": "pametni-iskalnik-video-iger",
+  "version": "1.0.0",
+  "description": "**Avtor:** Tilen Gabor | **Predmet:** Tehnologije integracije in digitalizacij",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "parse": "node parser/cli.js",
+    "test": "node --test",
+    "parse:offline": "node parser/reparse.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalonBot/Pametni-iskalnik-video-iger-tehnologije-integracije-in-digitalizacij.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TalonBot/Pametni-iskalnik-video-iger-tehnologije-integracije-in-digitalizacij/issues"
+  },
+  "homepage": "https://github.com/TalonBot/Pametni-iskalnik-video-iger-tehnologije-integracije-in-digitalizacij#readme",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}
