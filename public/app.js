@@ -1,13 +1,14 @@
+import { filterGames, euroPrice, isFree } from './filters.js';
 const $ = selector => document.querySelector(selector);
 const money = new Intl.NumberFormat('sl-SI', { style: 'currency', currency: 'EUR' });
 const integer = new Intl.NumberFormat('sl-SI');
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const safeUrl = value => { try { const u = new URL(value); return u.protocol === 'https:' ? escape(u.href) : ''; } catch { return ''; } };
-const price = game => game.price === null ? '—' : game.currency === 'EUR' ? money.format(game.price) : '—';
+const price = game => isFree(game) ? 'Brezplačno' : euroPrice(game) === null ? '—' : money.format(euroPrice(game));
 let snapshot = null;
 let polling = false;
 let visibleLimit = 60;
-const filters = ['#search', '#sort', '#genre', '#platform', '#max-price', '#high-rating'];
+const filters = ['#search', '#sort', '#genre', '#platform', '#max-price', '#payment', '#high-rating'];
 const status = message => { $('#status').textContent = message; };
 
 async function request(path, options) {
@@ -24,11 +25,11 @@ async function loadGames() {
   const games = snapshot.games;
   $('#total').textContent = integer.format(games.length);
   $('#max-discount').textContent = games.length ? Math.max(...games.map(g => g.discount)) + ' %' : '—';
-  const prices = games.filter(g => g.currency === 'EUR' && g.price !== null).map(g => g.price);
+  const prices = games.map(euroPrice).filter(value => value !== null);
   $('#min-price').textContent = prices.length ? money.format(Math.min(...prices)) : '—';
   $('#updated').textContent = new Date(snapshot.parsedAt).toLocaleString('sl-SI', { dateStyle: 'short', timeStyle: 'short' });
   const previousGenre = $('#genre').value;
-  $('#genre').innerHTML = '<option value="">Vse zvrsti</option>' + [...new Set(games.flatMap(g => g.genres))].sort().map(genre => `<option>${escape(genre)}</option>`).join('');
+  $('#genre').innerHTML = '<option value="">Vse zvrsti</option>' + [...new Set(games.flatMap(g => g.genres).concat(games.some(isFree) ? ['Free To Play'] : []))].sort().map(genre => `<option>${escape(genre)}</option>`).join('');
   if ([...$('#genre').options].some(o => o.value === previousGenre)) $('#genre').value = previousGenre;
   renderReport(snapshot.report);
   render();
@@ -36,30 +37,17 @@ async function loadGames() {
 
 function renderReport(report) {
   if (!report) return;
-  $('#report-content').innerHTML = `<p>${escape(report.scope)}</p><p>Strani: <b>${report.visitedPages}</b> · Vrstic vira: <b>${report.rowsSeen}</b> · Enoličnih iger: <b>${report.uniqueGames}</b> · Podvojitev: <b>${report.duplicates}</b> · Preskočenih vrstic (npr. paketi): <b>${report.skippedRows}</b></p><p>Vse strani: <b>${report.listingComplete ? "DA" : "NE"}</b> · Zajem zaključen: <b>${report.finished ? "DA" : "NE"}</b><br>Podrobnosti: ${report.detailCounts.ok} dostopnih, ${report.detailCounts.unavailable} nedostopnih, ${report.detailCounts.error} napak, ${report.detailCounts.pending} čakajočih.</p><p>Število rezultatov vira: ${report.expectedRowsAtStart} ob začetku → ${report.expectedRowsAtEnd} ob zadnji strani.</p><table><thead><tr><th>Podatek</th><th>Zbran</th><th>Manjka</th></tr></thead><tbody>${Object.entries(report.coverage).map(([field, count]) => `<tr><td>${escape(field)}</td><td>${count.present}</td><td>${count.missing}</td></tr>`).join('')}</tbody></table><p>${escape(report.limitation)}</p>`;
+  $('#report-content').innerHTML = `<p>${escape(report.scope)}</p><p>Strani: <b>${report.visitedPages}</b> · Vrstic vira: <b>${report.rowsSeen}</b> · Enoličnih iger: <b>${report.uniqueGames}</b> · Podvojitev: <b>${report.duplicates}</b> · Preskočenih vrstic (npr. paketi): <b>${report.skippedRows}</b></p><p>Vse strani: <b>${report.listingComplete ? "DA" : "NE"}</b> · Zajem zaključen: <b>${report.finished ? "DA" : "NE"}</b><br>Podrobnosti: ${report.detailCounts.ok} dostopnih, ${report.detailCounts.unavailable} nedostopnih, ${report.detailCounts.error} napak, ${report.detailCounts.pending} čakajočih.</p><p>Število rezultatov vira: ${report.expectedRowsAtStart} ob začetku → ${report.expectedRowsAtEnd} ob zadnji strani.</p><table><thead><tr><th>Podatek</th><th>Zbran</th><th>Manjka</th></tr></thead><tbody>${Object.entries(report.coverage).map(([field, count]) => `<tr><td>${escape(field)}</td><td>${count.present}</td><td>${count.missing}</td></tr>`).join('')}</tbody></table><p>${escape(report.limitation)}</p>${report.freeGames ? `<p><b>Dodatna zbirka: ${report.freeGames.count} brezplačnih iger.</b> ${escape(report.freeGames.scope)}</p>` : ''}`;
 }
 
-const nullLast = (a, b, direction = 1) => a === null ? (b === null ? 0 : 1) : b === null ? -1 : (a - b) * direction;
 function render() {
   if (!snapshot) return;
-  const query = $('#search').value.trim().toLocaleLowerCase('sl');
-  const maxPrice = $('#max-price').value === '' ? null : Number($('#max-price').value);
-  const games = snapshot.games.filter(game =>
-    (!query || `${game.name} ${game.description ?? ''}`.toLocaleLowerCase('sl').includes(query)) &&
-    (!$('#genre').value || game.genres.includes($('#genre').value)) &&
-    (!$('#platform').value || game.platforms.includes($('#platform').value)) &&
-    (maxPrice === null || game.currency === 'EUR' && game.price !== null && game.price <= maxPrice) &&
-    (!$('#high-rating').checked || game.rating !== null && game.rating >= 90));
-  const comparators = {
-    popular: (a, b) => nullLast(a.reviewCount, b.reviewCount, -1),
-    'price-asc': (a, b) => nullLast(a.currency === 'EUR' ? a.price : null, b.currency === 'EUR' ? b.price : null),
-    'price-desc': (a, b) => nullLast(a.currency === 'EUR' ? a.price : null, b.currency === 'EUR' ? b.price : null, -1),
-    discount: (a, b) => b.discount - a.discount,
-    rating: (a, b) => nullLast(a.rating, b.rating, -1) || nullLast(a.reviewCount, b.reviewCount, -1),
-    newest: (a, b) => nullLast(a.releaseDate ? Date.parse(a.releaseDate) : null, b.releaseDate ? Date.parse(b.releaseDate) : null, -1),
-    name: (a, b) => a.name.localeCompare(b.name, 'sl'),
-  };
-  games.sort((a, b) => comparators[$('#sort').value](a, b) || a.name.localeCompare(b.name, 'sl'));
+  const games = filterGames(snapshot.games, {
+    query: $('#search').value, genre: $('#genre').value,
+    platform: $('#platform').value, payment: $('#payment').value,
+    maxPrice: $('#max-price').value, highRating: $('#high-rating').checked,
+    sort: $('#sort').value,
+  });
   $('#result-count').textContent = games.length;
   $('#showing').textContent = `Prikazanih ${Math.min(visibleLimit, games.length)} od ${games.length} zadetkov (zbirka: ${snapshot.games.length} iger)`;
   $('#empty').hidden = games.length > 0;
@@ -72,7 +60,7 @@ $('#load-more').addEventListener('click', () => { visibleLimit += 60; render(); 
 
 function reset() {
   visibleLimit = 60;
-  for (const selector of ['#search', '#genre', '#platform', '#max-price']) $(selector).value = '';
+  for (const selector of ['#search', '#genre', '#platform', '#max-price', '#payment']) $(selector).value = '';
   $('#high-rating').checked = false;
   $('#sort').value = 'popular';
   render();

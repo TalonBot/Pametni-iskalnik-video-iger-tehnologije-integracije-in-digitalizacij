@@ -22,6 +22,8 @@ export function parseSearch(html) {
     if (!appId || !name) return;
     const finalText = clean(row.find('.discount_final_price').text());
     const cents = row.find('[data-price-final]').first().attr('data-price-final');
+    const free = /^(free(?: to play)?|play for free)$/i.test(finalText);
+    const amount = free ? 0 : finalText && cents !== undefined && /^\d+$/.test(cents) ? Number(cents) / 100 : priceNumber(finalText);
     const review = row.find('.search_review_summary').attr('data-tooltip-html') || '';
     const reviewMatch = review.match(/(\d+)% of the ([\d,]+) user reviews/);
     const released = clean(row.find('.search_released').text());
@@ -30,8 +32,8 @@ export function parseSearch(html) {
       appId, name, description: null, genres: [],
       platforms: [['win', 'Windows'], ['mac', 'macOS'], ['linux', 'Linux']].filter(([selector]) => row.find('.platform_img.' + selector).length).map(([, label]) => label),
       released, releaseDate: Number.isFinite(date) ? new Date(date).toISOString().slice(0, 10) : null,
-      price: cents !== undefined && /^\d+$/.test(cents) ? Number(cents) / 100 : priceNumber(finalText),
-      originalPrice: priceNumber(row.find('.discount_original_price').text()) ?? priceNumber(finalText),
+      price: amount,
+      originalPrice: priceNumber(row.find('.discount_original_price').text()) ?? amount,
       currency: finalText.includes('€') ? 'EUR' : null,
       discount: Math.abs(Number(row.find('.discount_pct').text().replace(/[^\d-]/g, ''))) || 0,
       rating: reviewMatch ? Number(reviewMatch[1]) : null,
@@ -76,7 +78,7 @@ export function parseDetail(html) {
   };
 }
 
-async function fetchHtml(url) {
+export async function fetchHtml(url) {
   let response;
   for (let attempt = 0; attempt < 3; attempt++) {
     response = await fetch(url, {
@@ -221,6 +223,20 @@ async function collect({ pages = null, details = true, fresh = false, onProgress
   } finally { await lock.close(); await unlink(path('parser.lock')); }
 }
 
-export async function readGames() {
-  return JSON.parse(await readFile(dataFile, 'utf8'));
+export async function readGames({ directory = new URL('../data/', import.meta.url) } = {}) {
+  const result = JSON.parse(await readFile(new URL('games.json', directory), 'utf8'));
+  // Old snapshots used data-price-final=0 even when Steam displayed no price.
+  for (const game of result.games) if (game.price === 0 && game.currency === null && game.originalPrice === null) game.price = null;
+  let free;
+  try { free = JSON.parse(await readFile(new URL('free-games.json', directory), 'utf8')); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; return result; }
+  const games = new Map(result.games.map(game => [game.appId, game]));
+  for (const game of free.games) games.set(game.appId, game);
+  result.games = [...games.values()];
+  result.count = result.games.length;
+  result.sourcePages = [...result.sourcePages, free.sourceUrl];
+  result.report = { ...result.report, freeGames: free.report };
+  result.parsedAt = result.parsedAt > free.parsedAt ? result.parsedAt : free.parsedAt;
+  result.warnings = [...result.warnings, ...free.warnings];
+  return result;
 }

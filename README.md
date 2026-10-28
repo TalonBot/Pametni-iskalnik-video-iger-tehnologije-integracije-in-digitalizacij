@@ -225,3 +225,23 @@ Za preverjanje so v `data/raw/` shranjeni izvorni HTML dokumenti, katerih vsebin
 **Obseg:** vse igre iz izbranega seznama Steamovih ponudb za regijo SI, ne celoten katalog Steam in ne podatki drugih storitev. Seznam se med zajemom spreminja, zato poročilo navede število rezultatov na začetku in koncu, preskočene vrstice in podvojitve. Vrednosti, ki jih vir ne objavi, se ne izmišljajo. Javno nedostopne Steam knjižnice in podatki RAWG/CheapShark ostajajo zunaj tega HTML parserja. Spletni prikaz prikazuje po 60 kartic ter omogoča nalaganje dodatnih, filtri in sortiranje pa delujejo nad celotno lokalno zbirko.
 
 Za demonstracijo po zaključenem zajemu zaženite `npm run parse:offline`: program iz izvirnih HTML ponovno sestavi podatke, poročilo in JSON z nič omrežnimi zahtevami. To zahteva ohranjeno mapo `data/raw/` in zaključen `data/checkpoint.json`; ti lokalni datoteki nista del Git repozitorija. Za samostojen spletni zajem zadostuje izvorna koda in `npm install`.
+
+
+## Posodobitev filtrov
+
+Iskanje preverja naslov, opis, zvrsti, oznake, funkcije, razvijalce in založnike. Besede se lahko pojavijo v različnem vrstnem redu; velike črke, šumniki in vezaji ne vplivajo na iskanje. Vsi izbrani filtri veljajo hkrati in delujejo nad celotno zbirko, tudi nad še neprikazanimi karticami.
+
+- `free to play`, `free-to-play`, `f2p`, `brezplačno`, `brezplačne igre` in `zastonj` poiščejo igre s potrjeno brezplačno ceno. Dodate lahko še izraz, npr. `f2p moba`.
+- Izbira **Brezplačne / Free to Play**, zvrst **Free To Play** in najvišja cena **0 €** izberejo iste brezplačne igre. Plačljivih iger zgolj z oznako Free To Play ne štejejo kot brezplačne.
+- Filter **Plačljive igre** izbere igre z znano pozitivno ceno v EUR. Neznane cene so izključene iz cenovnih filtrov in pri razvrščanju ostanejo na koncu.
+- Najvišja cena podpira cente. Gumb **Počisti filtre** ponastavi tudi vrsto cene in razvrščanje.
+
+Zbirka ponudb sama ne vsebuje običajnih brezplačnih iger. Dodatek `data/free-games.json` zato vsebuje zajem prve strani Steamovega seznama brezplačnih iger (do 100 vrstic, ne celoten katalog). Zajame le igre, kjer prikazana cena potrjuje brezplačnost; skriti atribut `data-price-final=0` brez vidne cene ni dokaz. Vidna oznaka Free ima prednost pred ceno plačljive nadgradnje v atributu.
+
+```bash
+npm run parse:free   # osveži samo dodatek brezplačnih iger
+npm start           # združi oba JSON po Steam appId in prikaže spletno aplikacijo
+npm test            # testi parserja, filtrov in združevanja zbirk
+```
+
+`npm run parse` in gumb **Osveži podatke** osvežita tudi brezplačni dodatek. `npm run parse:offline` ga ponovno sestavi iz shranjenega `data/raw/free-search-1.html` in strani podrobnosti, če je ta zajem na voljo. Pri napaki zajema se prejšnji dodatek ohrani. `/api/games` vrne združeno zbirko; `/api/report` in poročilo v aplikaciji vključujeta ločen obseg brezplačnega dodatka. Tabela pokritosti osnovnega poročila še vedno opisuje samo prvotni seznam ponudb.

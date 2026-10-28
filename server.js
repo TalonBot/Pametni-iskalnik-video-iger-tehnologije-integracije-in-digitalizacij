@@ -1,9 +1,10 @@
 import http from 'node:http';
+import { scrapeFreeGames } from './parser/free.js';
 import { readFile } from 'node:fs/promises';
 import { readGames, scrapeGames } from './parser/steam.js';
 
 const port = Number(process.env.PORT || 3000);
-const files = { '/': ['index.html', 'text/html'], '/app.js': ['app.js', 'text/javascript'], '/style.css': ['style.css', 'text/css'] };
+const files = { '/': ['index.html', 'text/html'], '/app.js': ['app.js', 'text/javascript'], '/filters.js': ['filters.js', 'text/javascript'], '/style.css': ['style.css', 'text/css'] };
 let status = { running: false, message: '', error: null };
 let lastRun = 0;
 const send = (res, code, data) => { res.writeHead(code, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(data)); };
@@ -16,7 +17,7 @@ http.createServer(async (req, res) => {
       catch (error) { if (error.code === 'ENOENT') return send(res, 404, { error: 'Podatki še niso zbrani. Zaženite parser z gumbom Osveži podatke.' }); throw error; }
     }
     if (req.method === 'GET' && url.pathname === '/api/report') {
-      try { return send(res, 200, JSON.parse(await readFile(new URL('./data/parser-report.json', import.meta.url), 'utf8'))); }
+      try { return send(res, 200, (await readGames()).report); }
       catch (error) { if (error.code === 'ENOENT') return send(res, 404, { error: 'Poročilo bo na voljo po prvem zajemu.' }); throw error; }
     }
     if (req.method === 'GET' && url.pathname === '/api/status') {
@@ -36,7 +37,7 @@ http.createServer(async (req, res) => {
       if (Date.now() - lastRun < 60000) return send(res, 429, { error: 'Pred ponovnim zagonom počakajte eno minuto.' });
       lastRun = Date.now();
       status = { running: true, message: 'Povezujem se s Steamom …', error: null };
-      scrapeGames({ onProgress: message => { status.message = message; } }).then(result => {
+      scrapeFreeGames({ onProgress: message => { status.message = message; } }).then(() => scrapeGames({ onProgress: message => { status.message = message; } })).then(() => readGames()).then(result => {
         status = { running: false, message: `Zbranih ${result.count} iger.`, error: null };
       }).catch(error => { status = { running: false, message: 'Osveževanje ni uspelo. Zadnji shranjeni podatki so ohranjeni.', error: error.message }; });
       return send(res, 202, status);

@@ -4,3 +4,5 @@
 .parser-report{border:1px solid #333;padding:15px;margin-bottom:18px;color:#aaa;font-size:12px;line-height:1.8}.parser-report summary{cursor:pointer;color:white}.parser-report p{margin:12px 0}.parser-report table{width:100%;border-collapse:collapse;margin:15px 0}.parser-report td,.parser-report th{padding:5px 8px;text-align:left;border-bottom:1px solid #292929}.parser-report .button{margin:10px 0}#load-more{display:flex;margin:28px auto}
 
 dialog table{width:100%;border-collapse:collapse;font-size:11px}dialog th,dialog td{text-align:left;padding:5px;border-bottom:1px solid #333}dialog details{margin:15px 0}dialog summary{cursor:pointer}dialog details img{margin-top:15px}
+
+.filter-help{font-size:11px;color:#999;line-height:1.7;margin-top:14px;max-width:850px}

@@ -1,3 +1,4 @@
+import { collectFree } from './free.js';
 // Reproduce the transformation using saved HTML; no network requests.
 import { readFile, writeFile, rename, open, unlink } from 'node:fs/promises';
 import { parseSearch, parseDetail, buildReport, sourceUrl } from './steam.js';
@@ -37,6 +38,8 @@ try {
   await atomic('games.json', result);
   await atomic('parser-report.json', report);
   await atomic('checkpoint.json', state);
+  try { await collectFree({ offline: true }); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
   console.log(`Iz lokalnega HTML ponovno razčlenjenih ${result.count} iger. Omrežnih zahtev: 0.`);
 } catch (error) { console.error(error.message); process.exitCode = 1; }
 finally { if (lock) { await lock.close(); await unlink(path('parser.lock')); } }

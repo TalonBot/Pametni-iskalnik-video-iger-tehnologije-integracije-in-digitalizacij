@@ -1,3 +1,4 @@
+import { scrapeFreeGames } from './free.js';
 import { scrapeGames } from './steam.js';
 
 try {
@@ -7,6 +8,7 @@ try {
   }
   const pageArgument = args.find(arg => arg.startsWith('--pages='))?.split('=')[1] || 'all';
   const pages = pageArgument === 'all' ? null : Number(pageArgument);
+  await scrapeFreeGames({ details: !args.includes('--no-details'), onProgress: console.log });
   const result = await scrapeGames({ pages, details: !args.includes('--no-details'), fresh: args.includes('--fresh'), onProgress: console.log });
   console.log(`Shranjeno ${result.count} iger v data/games.json. Opozorila: ${result.warnings.length}.`);
   console.log(`Vse strani seznama: ${result.report.listingComplete ? 'DA' : 'NE (omejen zajem)'}. Poročilo: data/parser-report.json`);

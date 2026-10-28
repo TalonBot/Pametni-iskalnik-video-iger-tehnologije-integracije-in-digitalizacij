@@ -10,6 +10,7 @@
     "start": "node server.js",
     "parse": "node parser/cli.js",
     "test": "node --test",
+    "parse:free": "node parser/free-cli.js",
     "parse:offline": "node parser/reparse.js"
   },
   "repository": {
