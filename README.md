@@ -2,6 +2,10 @@
 
 **Avtor:** Tilen Gabor | **Predmet:** Tehnologije integracije in digitalizacij
 
+## Naloga 3 – Odprti podatki
+
+Izvedba je v mapi [`naloga3/`](naloga3/README.md). Zagon: `npm install` in `npm start`, nato odprite **http://127.0.0.1:3000/naloga3/**. Razdelek »Videoigre v številkah« dinamično pridobi PCAXIS iz SURS/OPSI ter prikazuje trend igranja, primerjavi po spolu in izobrazbi, filtre, izračun deležev ter izvoz CSV. Podrobna razlaga vira, izračunov in lokalne kopije je v [navodilih naloge 3](naloga3/README.md). Testi: `npm run test:naloga3` oziroma `npm test` za celoten projekt.
+
 ## Naloga 2 - Parser: lokacija datotek
 
 Datoteke za **nalogo 2 (razčlenjevalnik spletnih vsebin)** so v tem repozitoriju:

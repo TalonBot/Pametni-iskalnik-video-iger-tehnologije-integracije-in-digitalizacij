@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Igranje videoiger v Sloveniji skozi odprte podatke SURS: trendi, primerjava po spolu in izobrazbi.">
+  <title>PLAY / Videoigre v številkah</title>
+  <link rel="stylesheet" href="/naloga3/style.css">
+  <script src="/naloga3/chart.js" defer></script>
+  <script src="/naloga3/app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#explore">Preskoči na podatke</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="PLAY, iskalnik videoiger"><span class="brand-icon">P↗</span> PLAY<span class="muted">/</span></a>
+    <nav aria-label="Glavna navigacija"><a href="/">Iskalnik iger</a><a href="/naloga3/" aria-current="page">Videoigre v številkah</a></nav>
+    <span class="local"><i></i> SLOVENIJA · SURS</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow hero-meta"><span>03 / ODPRTI PODATKI</span><span>PREBIVALCI, STARI 16–74 LET</span></div>
+      <div class="hero-body"><div><h1>Kdo pritisne<br><span>play?</span></h1><p>Videoigre so del našega vsakdana. Razišči, koliko ljudi<br class="desktop"> v Sloveniji igra ali prenaša igre in kako se to spreminja.</p></div><div class="hero-mark" aria-hidden="true">↗<span>IGRANJE V ŠIRŠI SLIKI</span></div></div>
+      <div class="hero-bottom"><span>RESNIČNI PODATKI. NOV POGLED NA IGRANJE.</span><a href="#explore">Razišči podatke ↓</a></div>
+    </section>
+    <section id="explore" class="explore" aria-labelledby="explore-title">
+      <div class="section-top"><div><div class="eyebrow muted">IGRANJE ALI PRENAŠANJE IGER</div><h2 id="explore-title">Videoigre v številkah<span class="badge">SI</span></h2></div><button id="refresh" class="button">↻ Osveži podatke</button></div>
+      <p id="status" class="status" role="status" aria-live="polite">Pridobivam najnovejšo datoteko SURS …</p>
+      <div id="content" hidden>
+        <div class="filters">
+          <label>LETO<select id="year"></select></label>
+          <label>SPOL<select id="sex"></select></label>
+          <label>IZOBRAZBA<select id="education"></select></label>
+          <label>PRIKAZ<select id="metric"><option value="percent">Delež uporabnikov interneta (%)</option><option value="count">Število oseb</option></select></label>
+          <button id="reset" class="text-button">Ponastavi ↗</button>
+        </div>
+        <p id="selection" class="selection"></p>
+        <div class="stats" aria-label="Povzetek izbrane skupine">
+          <div><span class="stat-label">IGRA ALI PRENAŠA IGRE</span><strong id="count">—</strong><span>oseb v izbrani skupini</span></div>
+          <div><span class="stat-label">DELEŽ UPORABNIKOV INTERNETA</span><strong id="percent">—</strong><span>znotraj izbrane skupine</span></div>
+          <div><span class="stat-label">SPREMEMBA</span><strong id="delta">—</strong><span id="delta-label">glede na prejšnjo meritev</span></div>
+          <div><span class="stat-label">UPORABLJA INTERNET</span><strong id="base">—</strong><span>oseb · osnova za izračun deleža</span></div>
+        </div>
+        <div class="chart-grid">
+          <article class="chart-card trend-card"><div class="card-heading"><div><span class="eyebrow muted">01 / SKOZI ČAS</span><h3>Kako se spreminja igranje?</h3></div><span class="unit"></span></div><p id="trend-context" class="chart-context"></p><div class="chart-area"><canvas id="trend" role="img" aria-label="Trend igranja po letih; vrednosti so tudi v tabeli spodaj"></canvas></div><p class="chart-note">Prikazana so leta z meritvami igranja. Črta povezuje meritve; vrednosti za vmesna leta ne izračunavamo. Manjkajoče vrednosti znotraj skupine prekinejo črto.</p></article>
+          <article class="chart-card"><div class="card-heading"><div><span class="eyebrow muted">02 / PO SPOLU</span><h3>Moški in ženske</h3></div><span class="unit"></span></div><p id="sex-context" class="chart-context"></p><div class="chart-area small"><canvas id="sex-chart" role="img" aria-label="Primerjava igranja po spolu"></canvas></div><p id="sex-empty" class="chart-note"></p></article>
+          <article class="chart-card"><div class="card-heading"><div><span class="eyebrow muted">03 / PO IZOBRAZBI</span><h3>Različne skupine, ista strast</h3></div><span class="unit"></span></div><p id="education-context" class="chart-context"></p><div class="chart-area small"><canvas id="education-chart" role="img" aria-label="Primerjava igranja po izobrazbi"></canvas></div><p id="education-empty" class="chart-note"></p></article>
+        </div>
+        <details class="data-table"><summary>Preglej podatke in prenesi izbor <span>↙</span></summary><p>Izbrana spol in izobrazba za vsa leta. — pomeni manjkajoč ali nezanesljiv podatek, ne nič oseb.</p><div class="table-scroll"><table><caption class="sr-only">Časovna vrsta izbrane skupine</caption><thead><tr><th scope="col">Leto</th><th scope="col">Igranje / prenašanje</th><th scope="col">Uporabniki interneta</th><th scope="col">Delež (%)</th><th scope="col">Oznake SURS</th></tr></thead><tbody id="table-body"></tbody></table></div><button id="csv" class="button quiet">Prenesi časovno vrsto CSV ↙</button><h4>Primerjavi za izbrano leto</h4><div class="table-scroll"><table><thead><tr><th scope="col">Primerjava</th><th scope="col">Skupina</th><th scope="col">Število oseb</th><th scope="col">Delež (%)</th><th scope="col">Oznake SURS</th></tr></thead><tbody id="comparison-body"></tbody></table></div></details>
+      </div>
+    </section>
+    <section class="source-section" aria-labelledby="source-title"><div><div class="eyebrow muted">O PODATKIH</div><h2 id="source-title">Odprti podatki.<br>Jasen kontekst.</h2></div><div class="source-copy"><p>Vir je Statistični urad Republike Slovenije (SURS), zbirka 2974206S, objavljena na portalu OPSI. Kazalnik vključuje igranje ali prenašanje igric, tudi na mobilnih telefonih in tablicah.</p><p>Delež izračunamo kot število oseb, ki igrajo ali prenašajo igre, deljeno s številom uporabnikov interneta v zadnjih treh mesecih v isti skupini × 100. Skupne vrednosti preberemo iz SURS; ne seštevamo jih s podskupinami. Zaradi zaokroževanja se seštevki lahko razlikujejo.</p><p>Podatki opisujejo navade prebivalcev, starih 16–74 let, in ne priljubljenosti posameznih iger ali žanrov. Oznake manjkajočih vrednosti ostanejo ohranjene v tabeli. Dodatne oznake SURS so prikazane ob posameznih vrednostih.</p><div id="provenance" class="provenance"></div><div class="source-links"><a href="https://podatki.gov.si/dataset/surs2974206s" target="_blank" rel="noopener noreferrer">Zbirka na OPSI ↗</a><a href="https://pxweb.stat.si/SiStatData/pxweb/sl/Data/-/2974206S.PX" target="_blank" rel="noopener noreferrer">Tabela in opombe SURS ↗</a><a href="/naloga3/source.px" download>Izvirna datoteka .px ↙</a></div><p class="license">SURS · Priznanje avtorstva CC BY 4.0 · Deleži so izračun aplikacije.</p></div></section>
+  </main>
+  <footer><a class="brand" href="/">PLAY /</a><span>Tehnologije integracije in digitalizacij · Tilen Gabor</span><span>NALOGA 3 / ODPRTI PODATKI</span></footer>
+</body>
+</html>

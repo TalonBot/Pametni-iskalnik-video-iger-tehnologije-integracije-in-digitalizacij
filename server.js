@@ -1,4 +1,5 @@
 import http from 'node:http';
+import { handleOpenData } from './naloga3/routes.js';
 import { scrapeFreeGames } from './parser/free.js';
 import { readFile } from 'node:fs/promises';
 import { readGames, scrapeGames } from './parser/steam.js';
@@ -12,6 +13,7 @@ const send = (res, code, data) => { res.writeHead(code, { 'Content-Type': 'appli
 http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
+    if (await handleOpenData(req, res, url)) return;
     if (req.method === 'GET' && url.pathname === '/api/games') {
       try { return send(res, 200, await readGames()); }
       catch (error) { if (error.code === 'ENOENT') return send(res, 404, { error: 'Podatki še niso zbrani. Zaženite parser z gumbom Osveži podatke.' }); throw error; }

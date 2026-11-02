@@ -1,0 +1,1263 @@
+CHARSET="ANSI";
+AXIS-VERSION="2004";
+CODEPAGE="windows-1250";
+LANGUAGE="sl";
+LANGUAGES="sl","en";
+CREATION-DATE="20141126 10:30";
+DECIMALS=0;
+MATRIX="2974206S";
+SUBJECT-CODE="29";
+SUBJECT-AREA="Informacijska družba - Information society";
+SUBJECT-AREA[en]="Information society";
+COPYRIGHT=YES;
+DESCRIPTION="Število posameznikov (16–74 let) po namenu uporabe interneta pri uporabnikih interneta, izobrazbi in spolu, Slovenija, letno";
+DESCRIPTION[en]="Number of individuals (16–74 years) by purpose of Internet usage by Internet users, by education and sex, Slovenia, annually";
+TITLE="Število posameznikov (16–74 let) po: LETO, NAMEN UPORABE INTERNETA, SPOL, IZOBRAZBA";
+TITLE[en]="Number of individuals (16–74 years) by YEAR, PURPOSE OF INTERNET USAGE, SEX and EDUCATION";
+CONTENTS="Število posameznikov (16–74 let)";
+CONTENTS[en]="Number of individuals (16–74 years)";
+UNITS="število";
+UNITS[en]="number";
+STUB="LETO","NAMEN UPORABE INTERNETA";
+STUB[en]="YEAR","PURPOSE OF INTERNET USAGE";
+HEADING="SPOL","IZOBRAZBA";
+HEADING[en]="SEX","EDUCATION";
+VALUES("LETO")="2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025","2026";
+VALUES[en]("YEAR")="2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025",
+"2026";
+VALUES("NAMEN UPORABE INTERNETA")="0 Prebivalstvo (16–74 let)",
+"1 Uporaba interneta v zadnjih 3 mesecih","1.1 Pošiljanje ali prejemanje e-pošte",
+"1.2 E-banèništvo",
+"1.3 Iskanje informacij o blagu, storitvah",
+"1.3.1 Iskanje informacij o varnosti izdelkov oziroma stranskih uèinkov, npr. sestava izdelka, o tveganju za zdravje",
+"1.4 Branje spletnih novic, spletnih èasopisov, spletnih revij",
+"1.5 Telefoniranje ali video telefoniranje s spletno kamero prek interneta",
+"1.6 Neposredno sporoèanje – izmenjava sporoèil prek programov, kot so Viber, WhatsApp, Skype, Messenger, Snapchat",
+"1.7 Nalaganje lastnih vsebin na spletne strani","1.8 Prodaja blaga, storitev",
+"1.9 Uporaba prostora za hrambo podatkov na internetu za shranjevanje datotek",
+"1.10 Poslušanje ali prenos glasbe prek interneta",
+"1.10.1 Poslušanje glasbe, npr. spletni radio, pretakanje glasbe",
+"1.10.2 Prenos glasbe prek interneta, npr. prek YouTuba, SoundClouda",
+"1.11 Poslušanje ali prenos podkastov prek interneta",
+"1.12 Izvedba aktivnosti povezanih z zdravjem prek interneta",
+"1.12.1 Iskanje informacij, povezanih z zdravjem",
+"1.12.1.1 Iskanje informacij, povezanih z fiziènim zdravjem",
+"1.12.1.2 Iskanje informacij, povezanih z duševnim zdravjem",
+"1.12.2 E-naroèanje obiska pri zdravniku",
+"1.12.2.1 Naroèanje obiska pri zdravniku v bolnišnici prek spletnega obrazca, npr. prek eNaroèanje",
+"1.12.2.2 Naroèanje obiska pri izbranem osebnem (družinskem) zdravniku prek spletnega obrazca",
+"1.12.3 Dostop do zdravstvene dokumentacije, npr. prek portala zVEM ali drugih portalov, npr. dostop do elektronskih zdravstvenih podatkov, e-receptov, e-napotnic",
+"1.12.3.1 Dostop do zdravstvene dokumentacije prek zVEM, npr. dostop do elektronskih zdravstvenih podatkov, e-receptov, e-napotnic",
+"1.12.3.1.1 Dostop do zdravstvene dokumentacije prek spletne strani zVEM, npr. dostop do elektronskih zdravstvenih podatkov, e-receptov, e-napotnic",
+"1.12.3.1.2 Dostop do zdravstvene dokumentacije prek mobilne aplikacije zVEM, npr. dostop do elektronskih zdravstvenih podatkov, e-receptov, e-napotnic",
+"1.12.3.2 Dostop do zdravstvene dokumentacije prek drugih portalov, npr. Portala za paciente, Gospodar zdravja, doZdravnika",
+"1.12.4 Komuniciranje z zdravnikom prek spletne strani ali mobilne aplikacije zVEM, npr. poslal sporoèilo, zaprosil za recept ali termin",
+"1.12.5 Uporaba drugih zdravstvenih storitev, npr. pridobitev recepta ali posvetovanje z zdravnikom, namesto obiska zdravstvenega doma ali zdravnika",
+"1.13 Uporaba storitev eZdravja na portalu zVEM, npr. eNaroèanje, vpogled v lastno zdravstveno dokumentacijo",
+"1.14 Naroèanje obiska pri zdravniku prek spletnega obrazca",
+"1.15 Sodelovanje v spletnih družbenih ali profesionalnih omrežjih",
+"1.15.1 Sodelovanje v spletnih družbenih medijih","1.15.1.1 Vsak dan ali skoraj vsak dan",
+"1.15.1.2 Vsaj enkrat na teden","1.15.1.3 Manj kot enkrat na teden",
+"1.15.2 Sodelovanje v profesionalnih spletnih omrežjih",
+"1.16 Gledanje internetne TV razliènih televizijskih programov v živo ali s èasovnim zamikom",
+"1.17 Gledanje video vsebin na zahtevo komercialnih ponudnikov",
+"1.18 Gledanje video vsebin na spletnih straneh za deljenje video vsebin, npr. YouTube",
+"1.19 Uporaba interneta za izobraževalne aktivnosti",
+"1.19.1 Udeležba na spletnem teèaju ali uèenje na daljavo v okviru izobraževanja",
+"1.19.1.1 Udeležba spletnega teèaja",
+"1.19.1.2 Uèenje na daljavo v okviru izobraževanja (npr. v orodjih MS Teams, Zoom)",
+"1.19.2 Uporaba spletnega gradiva za izobraževanje (npr. avdiovizualno gradivo, elektronske uèbenike, programe za izobraževanje ipd.)",
+"1.19.3 Komuniciranje prek izobraževalnih spletnih strani ali portalov s predavatelji ali študenti",
+"1.19.4 Komuniciranje s predavatelji ali študenti, uèenci, dijaki z uporabo spletnih avdio- ali videoorodij, npr. MS Teams, Zoom",
+"1.19.5 Namen izobraževalnih aktivnosti – formalno izobraževanje, npr. srednješolsko, višješolsko, visokošolsko",
+"1.19.6 Namen izobraževalnih aktivnosti – službeno ali z delom povezano izobraževanje",
+"1.19.7 Namen izobraževalnih aktivnosti – zasebno izobraževanje, npr. uporaba YouTuba",
+"1.20 Pridobivanje informacij o izobraževanju",
+"1.21 Upravljanje gospodinjskih aparatov ali naprav prek interneta, npr. pametna svetila, pametna stikala, robotski sesalnik, varnostni sistem",
+"1.22 Igranje ali prenašanje igric (vkljuèno z igricami za mobilne telefone ali tablice)",
+"1.23 Iskanje službe, pošiljanje prošenj za službo",
+"1.24 Izražanje (objavljanje, všeèkanje) mnenj o družbenih ali politiènih temah",
+"1.25 Sodelovanje v spletnih razpravah (tudi glasovanje) o družbenih ali politiènih temah",
+"1.26 Uporaba odprtokodnih storitev ali programov",
+"1.26.1 Uporaba odprtokodnega spletnega brskalnika, npr. Mozilla Firefox, Chromium, Brave",
+"1.26.2 Uporaba odprtokodnega urejevalnika besedil, slik, zvoka ali grafike, npr. LibreOffice, Open Office, Inkscape, GIMP, Audacity, Blender",
+"1.26.3 Uporaba odprtokodne spletne enciklopedije (npr. Wikipedije), odprtokodnega zemljevida (npr. Open Street Map) ali odprtokodnega programa za izmenjavo sporoèil ali videotelefoniranje (npr. Jitsi Meet)",
+"1.26.4 Uporaba odprtokodnega programa za upravljanje spletnih vsebin (npr. WordPress) ali za shranjevanje, deljenje dokumentov v prostoru za hrambo podatkov na internetu (npr. Nextcloud)",
+"1.27 Uporaba interneta v zadnjih 12 mesecih za izobraževalne aktivnosti, organizirane prek spleta zaradi covida-19",
+"1.27.1 Udeležba na spletnem teèaju (npr. webinarju, spletni delavnici) v zadnjih 12 mesecih, organiziranem prek spleta zaradi covida-19",
+"1.27.2 Uèenje na daljavo v okviru izobraževanja (npr. v orodjih MS Teams, Zoom) v zadnjih 12 mesecih, organiziranega prek spleta zaradi covida-19",
+"1.28 Uporaba interneta v zadnjih 12 mesecih za službene namene",
+"1.28.1 Uporaba interneta v zadnjih 12 mesecih za opravljanje dela",
+"1.28.2 Uporaba interneta v zadnjih 12 mesecih za opravljanje dela na daljavo (oddaljeni dostop), uvedenega zaradi covida-19",
+"1.28.3 Uporaba interneta v zadnjih 12 mesecih za opravljanje dela na daljavo (oddaljeni dostop)",
+"1.29 Organizacija prevoza pri drugi fizièni osebi v zadnjih 12 mesecih",
+"1.29.1 Organizacija prevoza pri drugi fizièni osebi prek posredniške spletne strani ali aplikacije za urejanje prevozov (npr. prevoz.org) v zadnjih 12 mesecih",
+"1.29.2 Organizacija prevoza pri drugi fizièni osebi prek drugih spletnih strani, aplikacij ali družabnih omrežij v zadnjih 12 mesecih",
+"1.30 Organizacija nastanitve, npr. sobe, stanovanja, hiše, poèitniške hiše ipd. pri drugi fizièni osebi v zadnjih 12 mesecih",
+"1.30.1 Organizacija nastanitve, npr. sobe, stanovanja, hiše, poèitniške hiše ipd. pri drugi fizièni osebi prek posredniške spletne strani ali aplikacije (npr. Airbnb) v zadnjih 12 mesecih",
+"1.30.2 Organizacija nastanitve, npr. sobe, stanovanja, hiše, poèitniške hiše ipd. pri drugi fizièni osebi prek drugih spletnih strani, aplikacij ali družabnih omrežij v zadnjih 12 mesecih",
+"1.31 Pridobitev plaèanega delo prek posredniške spletne strani v zadnjih 12 mesecih, npr. letgo, customnanny, Fiveer, Upwork, TaskRabbit, Freelancer, Amazon Mechanical Turk",
+"1.31.1 Pridobljeno delo prek posredniške spletne strani v zadnjih 12 mesecih je bil dodatni vir prihodka",
+"1.32 Pridobivanje znanja s pomoèjo spletnih enciklopedij",
+"1.33 Izdelava spletnih strani ali blogov",
+"1.34 Uporaba storitev, povezanih s potovanji in nastanitvijo","1.35 Prenašanje programske opreme",
+"1.36 Uporaba ali odprtje predplaèniškega raèuna, npr. PayPal";
+VALUES[en]("PURPOSE OF INTERNET USAGE")="0 Population (16–74 years)",
+"1 Internet usage in last the 3 months","1.1 Sending or receiving e-mail","1.2 E-banking",
+"1.3 Finding information about goods and services",
+"1.3.1 Finding information about product safety or side effects, e.g. product composition, health risks",
+"1.4 Reading online news sites, online newspapers, online news magazines",
+"1.5 Telephoning over the Internet, video calls (via webcam)",
+"1.6 Using instant messaging, i.e. exchanging messages via Skype, Viber, FaceTime, WhatsApp",
+"1.7 Uploading self-created content to any website to be shared","1.8 Selling goods, services",
+"1.9 Usage of storage space on the Internet for storing files",
+"1.10 Listening to music or downloading music",
+"1.10.1 Listening to music (e.g. web radio, music streaming)",
+"1.10.2 Downloaded music via the Internet, e.g. via YouTube, SoundCloud",
+"1.11 Listening to or downloading podcasts",
+"1.12 Conducted health related activities over the Internet",
+"1.12.1 Seeking of health-related information",
+"1.12.1.1 Seeking of physical health related information",
+"1.12.1.2 Seeking of mental health related information",
+"1.12.2 Making an appointment with a practitioner via a website (e-health)",
+"1.12.2.1 Making an appointment with a practitioner in the hospital via a web form, e.g. via the eNaroèanje application",
+"1.12.2.2 Making an appointment with a chosen (family) practitioner via a web form",
+"1.12.3 Accessing health records online, e.g. via the zVEM portal or other health services, e.g. access to electronic health data, e-prescriptions, e-referrals",
+"1.12.3.1 Accessing health records online via the zVEM, e.g. access to electronic health data, e-prescriptions, e-referrals",
+"1.12.3.1.1 Accessing health records online via the zVEM website, e.g. access to electronic health data, e-prescriptions, e-referrals",
+"1.12.3.1.2 Accessing health records online via the zVEM app, e.g. access to electronic health data, e-prescriptions, e-referrals",
+"1.12.3.2 Accessing health records online via other health services, e.g. Portal za paciente",
+"1.12.4 Communication with a physician via the zVEM website or app, e.g. sending a message, requesting a prescription, making an appointment",
+"1.12.5 Using other health services via a website or app instead of having to go to the hospital or visit a doctor, e.g. by getting a prescription or a consultation online",
+"1.13 Using eZdravje services on the zVEM portal, e.g. eNaroèanje, access to own medical records",
+"1.14 Making appointment with practitioner via a web form",
+"1.15 Participation in social or professional networks","1.15.1 Participation in social networks",
+"1.15.1.1 Every day or almost every day","1.15.1.2 At least once a week",
+"1.15.1.3 Less than once a week","1.15.2 Participating in professional social networks",
+"1.16 Watching internet streamed TV (live or catch-up) from TV broadcasters",
+"1.17 Watching video on demand from commercial services",
+"1.18 Watching video content from sharing services (e.g. YouTube)",
+"1.19 Conducted learning activities over the Internet",
+"1.19.1 Doing an online course or distance learning for educational purposes",
+"1.19.1.1 Doing an online course",
+"1.19.1.2 Distance learning for educational purposes, e.g. by using MS Teams, Zoom applications",
+"1.19.2 Using online learning material (e.g. audio-visual materials, electronic textbooks, online learning software)",
+"1.19.3 Communication with instructors or students using educational websites or portals",
+"1.19.4 Communicating with educators or learners using audio or video online tools, e.g. MS Teams, Zoom",
+"1.19.5 Purpose of learning activities – formal education, e.g. school or university",
+"1.19.6 Purpose of learning activities – professional or work-related",
+"1.19.7 Purpose of learning activities – private purposes, e.g. YouTube",
+"1.20 Looking for information about education",
+"1.21 Interaction via the Internet with households equipment or appliances, e.g. light bulb, thermostat, robot vacuum, security system",
+"1.22 Playing or downloading games","1.23 Looking for a job or sending a job application",
+"1.24 Expressing (posting, liking) opinions on civic or political issues",
+"1.25 Taking part in online consultations (or voting) to define civic or political issues",
+"1.26 Using open source services or programs",
+"1.26.1 Using an open source internet browser, e.g. Mozilla Firefox, Chromium, Brave",
+"1.26.2 Using an open source text, picture, sound or graphics editor, e.g. LibreOffice, Open Office, Inkscape, GIMP, Audacity, Blender",
+"1.26.3 Using an open source online encyclopedia (e.g. .Wikipedia), an open source map (e.g. Open Street Map) or open source messaging or videoconferencing software (e.g. Jitsi Meet)",
+"1.26.4 Using open source software for managing web content (e.g. WordPress) or for storing, sharing documents on the Internet online data storage space (e.g. Nextcloud)",
+"1.27 Conducted educational activities over the Internet in the last 12 months due to COVID-19",
+"1.27.1 Doing an online course (e.g. webinar, online workshop) in the last 12 months due to COVID-19",
+"1.27.2 Distance learning for educational purposes (e.g. by using MS Teams, Zoom applications) due to COVID-19",
+"1.28 Usage of the Internet for professional purposes in the last 12 months",
+"1.28.1 Conducted work-related activities over of the Internet in the last 12 months",
+"1.28.2 Conducted remote work (remote access) activities over of the Internet in the last 12 months due to COVID-19",
+"1.28.3 Conducted remote work (remote access) activities over of the Internet in the last 12 months",
+"1.29 Arranged a transport service from another individual in the last 12 months",
+"1.29.1 Arranged a transport service from another private individual arranged via intermediary website or app (e.g. prevoz.org) in the last 12 months",
+"1.29.2 Arranged a transport service from another private individual arranged via other websites, app or social networks in the last 12 months",
+"1.30 Arranged an accommodation, e.g. a room, apartment, house, holiday cottage etc., from another private individual in the last 12 months",
+"1.30.1 Arranged an accommodation, e.g. a room, apartment, house, holiday cottage etc., from another private individual via intermediary websites or apps (e.g. Airbnb) in the last 12 months",
+"1.30.2 Arranged an accommodation, e.g. a room, apartment, house, holiday cottage etc., from another private individual via other websites, apps or social networks in the last 12 months",
+"1.31 Obtained paid work by using an intermediary website in the last 12 months, e.g. letgo, customnanny, Fiveer, Upwork, TaskRabbit, Freelancer, Amazon Mechanical Turk",
+"1.31.1 Obtained paid work by using an intermediary website in the last 12 months presented an additional source of income",
+"1.32 Obtain knowledge through online encyclopedias","1.33 Creating websites or blogs",
+"1.34 Usage of services related to travel and accommodation","1.35 Downloading software",
+"1.36 Using or opening payment accounts (e.g. PayPal) to pay for goods or services";
+VALUES("SPOL")="Spol – SKUPAJ","Moški","Ženske";
+VALUES[en]("SEX")="Sex – TOTAL","Male","Female";
+VALUES("IZOBRAZBA")="Izobrazba – SKUPAJ","Osnovnošolska ali manj","Srednješolska",
+"Višješolska, visokošolska ali veè";
+VALUES[en]("EDUCATION")="Education – TOTAL","Basic or less","Upper secondary","Tertiary or more";
+TIMEVAL("LETO")=TLIST(A1),"2015","2016","2017","2018","2019","2020","2021","2022","2023","2024",
+"2025","2026";
+TIMEVAL[en]("YEAR")=TLIST(A1),"2015","2016","2017","2018","2019","2020","2021","2022","2023","2024",
+"2025","2026";
+CODES("LETO")="2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025","2026";
+CODES[en]("YEAR")="2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025",
+"2026";
+CODES("NAMEN UPORABE INTERNETA")="STAT2","STAT25","STAT54","STAT69","STAT58","STAT1895","STAT63",
+"STAT310","STAT1362","STAT876","STAT70","STAT944","STAT1449","STAT1064","STAT1450","STAT1663",
+"STAT1451","STAT66","STAT1893","STAT1894","STAT878","STAT1452","STAT1453","STAT1454","STAT1814",
+"STAT1922","STAT1923","STAT1735","STAT1924","STAT1455","STAT1363","STAT1068","STAT999","STAT810",
+"STAT995","STAT996","STAT997","STAT815","STAT1065","STAT1066","STAT1067","STAT1004","STAT1725",
+"STAT1000","STAT1606","STAT1001","STAT1002","STAT1726","STAT1664","STAT1665","STAT1666","STAT234",
+"STAT1364","STAT1063","STAT064","STAT811","STAT812","STAT1456","STAT1457","STAT1458","STAT1459",
+"STAT1460","STAT1607","STAT1608","STAT1609","STAT1610","STAT1611","STAT1612","STAT1613","STAT1112",
+"STAT1109","STAT1110","STAT1108","STAT1105","STAT1106","STAT1267","STAT1270","STAT813","STAT877",
+"STAT59","STAT62","STAT1069";
+CODES[en]("PURPOSE OF INTERNET USAGE")="STAT2","STAT25","STAT54","STAT69","STAT58","STAT1895",
+"STAT63","STAT310","STAT1362","STAT876","STAT70","STAT944","STAT1449","STAT1064","STAT1450",
+"STAT1663","STAT1451","STAT66","STAT1893","STAT1894","STAT878","STAT1452","STAT1453","STAT1454",
+"STAT1814","STAT1922","STAT1923","STAT1735","STAT1924","STAT1455","STAT1363","STAT1068","STAT999",
+"STAT810","STAT995","STAT996","STAT997","STAT815","STAT1065","STAT1066","STAT1067","STAT1004",
+"STAT1725","STAT1000","STAT1606","STAT1001","STAT1002","STAT1726","STAT1664","STAT1665","STAT1666",
+"STAT234","STAT1364","STAT1063","STAT064","STAT811","STAT812","STAT1456","STAT1457","STAT1458",
+"STAT1459","STAT1460","STAT1607","STAT1608","STAT1609","STAT1610","STAT1611","STAT1612","STAT1613",
+"STAT1112","STAT1109","STAT1110","STAT1108","STAT1105","STAT1106","STAT1267","STAT1270","STAT813",
+"STAT877","STAT59","STAT62","STAT1069";
+CODES("SPOL")="1","2","3";
+CODES[en]("SEX")="1","2","3";
+CODES("IZOBRAZBA")="1","2","3","4";
+CODES[en]("EDUCATION")="1","2","3","4";
+LAST-UPDATED="20261008 10:30";
+CONTACT="Statistièni urad RS, T: (01) 241 64 04, E: gp.surs@gov.si";
+CONTACT[en]="Statistical Office of the Republic of Slovenia, T: +386 1 241 64 04, E: gp.surs@gov.si";
+DATABASE="SI-STAT";
+DATABASE[en]="SI-STAT";
+SOURCE="Statistièni urad Republike Slovenije";
+SOURCE[en]="Statistical Office of Republic Slovenia";
+NOTEX="Izvedbo raziskovanja je leta 2015 delno financira Evropska unija, in sicer iz Evropskega sklada za regionalni razvoj. Operacija se izvedla kot del Operativnega programa za krepitev regionalnih razvojnih potencialov za obdobje 2007–2013, razvojne "
+"prioritete Tehnièna pomoè. Od leta 2016 dalje se raziskovanje delno izvaja kot del aktivnosti za tehnièno podporo (Aktivnosti študij, vrednotenj in druge podlage, analize, strateški programski dokumenti) v okviru Operativnega programa za izvajanje "
+"evropske kohezijske politike v obdobju 2014–2020 za cilj naložbe za rast in delovna mesta, ki jo sofinancirata Evropska unija iz Kohezijskega sklada in Republika Slovenija.#";
+NOTEX[en]="The survey was in 2015 partly funded by the European Union through the European Regional Development Fund. The operation was performed under the Operational Programme for Strengthening Regional Development Potentials 2007–2013, development "
+"priority Technical Assistance. From 2016 the survey is partly funded in the framework of the technical support activities (studies, evaluations and other bases, analysis, strategic programming documents) under the Operational Program for the "
+"Implementation of the EU Cohesion Policy in the period 2014–2020 for the goal of investments in growth and jobs, which is co-funded by the European Union Cohesion Fund and the Republic of Slovenia.#";
+NOTE="Povezane vsebine:#- <A class=seznam HREF=https://www.stat.si/statweb/File/DocSysFile/8277 target=_blank>Metodološka pojasnila</A>#";
+NOTE[en]="Linked content:# - <A class=seznam HREF= https://www.stat.si/statweb/File/DocSysFile/8098 target=_blank>Methodological explanations</A>#";
+VALUENOTEX("NAMEN UPORABE INTERNETA","1.26 Uporaba odprtokodnih storitev ali programov")="Podatki o uporabi odprtokodnih storitev ali programov za obdobje do (vkljuèno) leta 2021 so lahko precenjeni zaradi vkljuèitve uporabe neodprtokodnih storitev ali "
+"programov, npr. podatki o uporabi odprtokodnega brskalnika se lahko nanašajo tudi na uporabo Google Chroma.";
+VALUENOTEX[en]("PURPOSE OF INTERNET USAGE","1.26 Using open source services or programs")="Data on the use of open source services or programs for the period until (including) 2021 may be overestimated due to the inclusion of the use of non-open source "
+"services or programs, e.g. data on the use of open source browser may also refer to the use of Google Chrome.";
+VALUENOTEX("NAMEN UPORABE INTERNETA","1.26.1 Uporaba odprtokodnega spletnega brskalnika, npr. Mozilla Firefox, Chromium, Brave")="Podatki o uporabi odprtokodnih storitev ali programov za obdobje do (vkljuèno) leta 2021 so lahko precenjeni zaradi "
+"vkljuèitve uporabe neodprtokodnih storitev ali programov, npr. podatki o uporabi odprtokodnega brskalnika se lahko nanašajo tudi na uporabo Google Chroma.";
+VALUENOTEX[en]("PURPOSE OF INTERNET USAGE","1.26.1 Using an open source internet browser, e.g. Mozilla Firefox, Chromium, Brave")="Data on the use of open source services or programs for the period until (including) 2021 may be overestimated due to the "
+"inclusion of the use of non-open source services or programs, e.g. data on the use of open source browser may also refer to the use of Google Chrome.";
+VALUENOTEX("NAMEN UPORABE INTERNETA","1.26.2 Uporaba odprtokodnega urejevalnika besedil, slik, zvoka ali grafike, npr. LibreOffice, Open Office, Inkscape, GIMP, Audacity, Blender")="Podatki o uporabi odprtokodnih storitev ali programov za obdobje do "
+"(vkljuèno) leta 2021 so lahko precenjeni zaradi vkljuèitve uporabe neodprtokodnih storitev ali programov, npr. podatki o uporabi odprtokodnega brskalnika se lahko nanašajo tudi na uporabo Google Chroma.";
+VALUENOTEX[en]("PURPOSE OF INTERNET USAGE","1.26.2 Using an open source text, picture, sound or graphics editor, e.g. LibreOffice, Open Office, Inkscape, GIMP, Audacity, Blender")="Data on the use of open source services or programs for the period until "
+"(including) 2021 may be overestimated due to the inclusion of the use of non-open source services or programs, e.g. data on the use of open source browser may also refer to the use of Google Chrome.";
+VALUENOTEX("NAMEN UPORABE INTERNETA","1.26.3 Uporaba odprtokodne spletne enciklopedije (npr. Wikipedije), odprtokodnega zemljevida (npr. Open Street Map) ali odprtokodnega programa za izmenjavo sporoèil ali videotelefoniranje (npr. Jitsi Meet)")="Podatki "
+"o uporabi odprtokodnih storitev ali programov za obdobje do (vkljuèno) leta 2021 so lahko precenjeni zaradi vkljuèitve uporabe neodprtokodnih storitev ali programov, npr. podatki o uporabi odprtokodnega brskalnika se lahko nanašajo tudi na uporabo Google "
+"Chroma.";
+VALUENOTEX[en]("PURPOSE OF INTERNET USAGE","1.26.3 Using an open source online encyclopedia (e.g. .Wikipedia), an open source map (e.g. Open Street Map) or open source messaging or videoconferencing software (e.g. Jitsi Meet)")="Data on the use of open "
+"source services or programs for the period until (including) 2021 may be overestimated due to the inclusion of the use of non-open source services or programs, e.g. data on the use of open source browser may also refer to the use of Google Chrome.";
+VALUENOTEX("NAMEN UPORABE INTERNETA","1.26.4 Uporaba odprtokodnega programa za upravljanje spletnih vsebin (npr. WordPress) ali za shranjevanje, deljenje dokumentov v prostoru za hrambo podatkov na internetu (npr. Nextcloud)")="Podatki o uporabi "
+"odprtokodnih storitev ali programov za obdobje do (vkljuèno) leta 2021 so lahko precenjeni zaradi vkljuèitve uporabe neodprtokodnih storitev ali programov, npr. podatki o uporabi odprtokodnega brskalnika se lahko nanašajo tudi na uporabo Google Chroma.";
+VALUENOTEX[en]("PURPOSE OF INTERNET USAGE","1.26.4 Using open source software for managing web content (e.g. WordPress) or for storing, sharing documents on the Internet online data storage space (e.g. Nextcloud)")="Data on the use of open source services "
+"or programs for the period until (including) 2021 may be overestimated due to the inclusion of the use of non-open source services or programs, e.g. data on the use of open source browser may also refer to the use of Google Chrome.";
+VALUENOTEX("NAMEN UPORABE INTERNETA","1.30 Organizacija nastanitve, npr. sobe, stanovanja, hiše, poèitniške hiše ipd. pri drugi fizièni osebi v zadnjih 12 mesecih")="Podatki lahko vkljuèujejo tudi organizacijo nastanitve pri pravni osebi.";
+VALUENOTEX[en]("PURPOSE OF INTERNET USAGE","1.30 Arranged an accommodation, e.g. a room, apartment, house, holiday cottage etc., from another private individual in the last 12 months")="Data may also include arrangement for an accommodation from legal "
+"units.#";
+DATASYMBOL1="N";
+DATASYMBOL1[en]="N";
+DATASYMBOL2="-";
+DATASYMBOL2[en]="-";
+DATASYMBOL4="z";
+DATASYMBOL4[en]="z";
+DATANOTECELL("2020","STAT2","2","2")=" M";
+DATANOTECELL[en]("2020","STAT2","2","2")=" M";
+DATANOTECELL("2020","STAT54","2","2")=" M";
+DATANOTECELL[en]("2020","STAT54","2","2")=" M";
+DATANOTECELL("2020","STAT58","2","2")=" M";
+DATANOTECELL[en]("2020","STAT58","2","2")=" M";
+DATANOTECELL("2020","STAT63","2","2")=" M";
+DATANOTECELL[en]("2020","STAT63","2","2")=" M";
+DATANOTECELL("2020","STAT1449","2","2")=" M";
+DATANOTECELL[en]("2020","STAT1449","2","2")=" M";
+DATANOTECELL("2020","STAT1451","2","2")=" M";
+DATANOTECELL[en]("2020","STAT1451","2","2")=" M";
+DATANOTECELL("2020","STAT66","2","2")=" M";
+DATANOTECELL[en]("2020","STAT66","2","2")=" M";
+DATANOTECELL("2020","STAT1063","2","2")=" M";
+DATANOTECELL[en]("2020","STAT1063","2","2")=" M";
+DATANOTECELL("2020","STAT1456","2","2")=" M";
+DATANOTECELL[en]("2020","STAT1456","2","2")=" M";
+DATANOTECELL("2020","STAT1457","2","2")=" M";
+DATANOTECELL[en]("2020","STAT1457","2","2")=" M";
+DATA=
+1554075 355837 855161 343078 787481 153087 496391 138003 766594 202749 358770 205075 
+1136008 162024 646007 327977 592912 90415 370078 132418 543096 71608 275929 195559 
+984153 120792 537839 325521 507614 65498 309698 132418 476539 55294 228141 193104 
+523123 23381 264244 235498 277243 13481 158508 105253 245880 9899 105736 130245 
+947544 109828 527026 310691 486427 61364 298924 126139 461117 48463 228102 184552 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+870813 102904 482384 285525 464477 57747 289147 117584 406336 45157 193237 167942 
+409495 65224 195792 148479 209247 36591 105509 67147 200248 28633 90284 81332 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+423832 82510 217302 124020 219090 42210 120048 56831 204742 40299 97254 67189 
+280308 30183 154178 95947 181614 25661 111752 44201 98694 4522 42426 51746 
+294107 43652 124551 125904 156083 20804 74813 60466 138024 22847 49738 65438 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+735236 86213 401064 247959 321237 34363 194959 91915 413999 51850 206104 156045 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+596195 110426 306522 179247 286937 58125 158398 70414 309259 52301 148124 108833 
+580796 110426 304062 166307 278167 58125 155938 64104 302628 52301 148124 102203 
+405873 85391 211771 108712 199861 45475 112097 42289 206012 39915 99674 66423 
+136515 19493 75275 41747 61293 9691 36432 15170 75222 9802 38842 26578 
+38407 5543 17017 15847 17013 2959 7409 6645 21394 2584 9608 9202 
+92653 916 35108 56630 53813 916 23855 29043 38840 ".." 11253 27587 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+253235 42216 100285 110734 122176 21604 59348 41224 131059 20612 40937 69510 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+49158 5013 20378 23766 27133 4150 13897 9086 22025 863 6481 14681 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+212644 32776 87755 92113 104505 16559 52564 35382 108140 16216 35191 56732 
+91827 18406 35305 38116 40489 9354 17743 13393 51337 9052 17562 24723 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+488762 69811 238367 180584 224793 30785 125607 68401 263969 39026 112759 112183 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+202122 21184 113138 67800 98547 12466 61762 24319 103575 8717 51376 43481 
+109911 18907 43267 47737 63213 11354 31283 20576 46697 7553 11983 27161 
+72289 7531 29323 35436 32105 3663 17448 10994 40184 3867 11875 24442 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+583357 82750 278095 222511 281998 42883 151294 87821 301359 39868 126801 134691 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+600773 57780 320766 222226 299480 28564 181311 89605 301293 29216 139456 132621 
+393875 58665 181749 153461 235842 37560 121511 76771 158033 21105 60238 76690 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1547730 342652 850075 355003 789234 160461 485003 143770 758496 182191 365072 211233 
+1168513 168873 654787 344853 606573 91927 376776 137871 561940 76946 278011 206982 
+1020811 130118 558483 332210 514755 73236 308111 133408 506057 56882 250372 198802 
+545119 19903 298734 226483 284489 14270 167612 102606 260630 5632 131121 123877 
+1000490 130796 555960 313734 521784 68852 326247 126685 478706 61944 229713 187048 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+931211 130563 512141 288506 488111 69386 303339 115386 443100 61177 208802 173121 
+490746 86610 236502 167634 250913 53293 130474 67146 239833 33317 106028 100488 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+384915 60493 193103 131319 199565 35955 113587 50024 185350 24538 79517 81295 
+252833 27677 146854 78302 151697 19865 96238 35594 101136 7811 50616 42709 
+376774 44762 187520 144492 194516 27607 102541 64369 182258 17155 84980 80123 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+564804 85393 305206 174205 286929 51727 169778 65424 277875 33666 135428 108781 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+748732 85664 417521 245546 339214 37932 215101 86181 409518 47732 202420 159366 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+143372 5665 61242 76465 60663 2762 23582 34320 82709 2903 37660 42146 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+63642 1871 23627 38143 25214 1032 8616 15566 38428 839 15012 22577 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+592938 109002 325737 158199 300128 59079 186589 54460 292810 49923 139148 103739 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+378717 47908 200281 130528 212819 30540 119912 62367 165899 17368 80370 68161 
+204967 40438 102465 62064 109789 24632 59856 25301 95178 15806 42609 36763 
+740577 97200 411124 232254 379701 59310 227731 92660 360876 37890 183393 139594 
+239563 42973 94873 101716 112198 23645 42773 45780 127365 19328 52100 55936 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+44284 2242 14899 27142 23687 1124 8115 14447 20597 1118 6784 12695 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+207470 36789 86899 83782 103426 21341 40376 41708 104044 15448 46523 42073 
+93113 18864 42221 32028 41205 10186 20418 10602 51907 8679 21803 21425 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+281310 66434 144457 70418 171187 45158 87468 38561 110123 21276 56989 31858 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+57068 11746 28023 17299 36518 6601 18235 11681 20550 5144 9788 5617 
+582354 53831 307967 220556 287293 29687 172245 85361 295061 24144 135723 135194 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+132494 8006 67057 57430 80648 5194 42056 33397 51846 2812 25001 24034 
+1534201 327076 842368 364756 779328 150102 493457 135770 754873 176974 348912 228987 
+1210261 183141 672986 354133 619046 95067 391527 132452 591215 88074 281459 221681 
+1058666 138701 572372 347592 535992 72029 333406 130557 522673 66672 238966 217035 
+599167 34113 291751 273303 309092 19203 172254 117635 290075 14909 119497 155669 
+1064399 145391 581396 337613 548472 77538 343502 127432 515927 67853 237894 210181 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+928648 130358 506460 291830 489952 65791 308089 116072 438696 64567 198371 175758 
+565090 93014 287287 184789 291346 49350 166016 75980 273745 43664 121272 108809 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+433412 82830 223805 126776 216945 40183 126627 50136 216466 42648 97178 76640 
+329344 42076 171839 115428 192460 26817 110277 55366 136884 15260 61562 60062 
+401049 51734 183619 165696 202428 26010 104091 72327 198621 25724 79528 93370 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+836098 98755 453970 283373 375511 37691 239109 98710 460587 61064 214861 184663 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+708830 124305 375296 209230 360450 61220 219978 79252 348380 63084 155318 129978 
+692851 124305 370394 198152 353851 61220 217022 75608 339000 63084 153372 122544 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+104048 5594 35410 63044 47899 1462 20279 26157 56149 4132 15131 36886 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+278313 43531 117643 117140 137266 23947 58131 55188 141048 19584 59512 61952 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+83892 9309 38156 36428 45093 7148 18703 19242 38800 2161 19454 17185 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+230297 35816 95445 99036 119310 19832 52207 47272 110987 15984 43238 51764 
+85387 16604 28304 40480 47183 8101 14758 24325 38204 8503 13546 16155 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+202453 25198 113080 64175 95101 12168 61762 21171 107352 13030 51318 43004 
+69356 6867 33175 29313 39265 4192 19026 16047 30091 2675 14149 13266 
+57969 5695 21343 30931 30146 2991 10936 16219 27823 2704 10407 14712 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+62338 9219 23151 29968 32239 6601 12621 13017 30099 2618 10530 16950 
+52671 8629 19131 24911 26435 6011 10186 10238 26236 2618 8945 14673 
+13599 1930 4597 7071 9160 1930 2435 4794 4439 ".." 2162 2277 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+591224 55670 294265 241289 279943 22788 169493 87661 311281 32881 124772 153628 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1538176 314049 838506 385621 781532 137956 497774 145802 756644 176093 340732 239819 
+1226695 178173 681541 366981 639757 94764 406274 138720 586938 83409 275267 228262 
+1076948 134583 580091 362274 553570 71487 344933 137151 523378 63096 235158 225123 
+644873 39815 330674 274384 332618 20086 202221 110310 312255 19728 128453 164074 
+1065218 142053 587460 335706 573437 81957 363138 128342 491781 60096 224322 207364 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+615400 98426 324579 192395 311985 47841 191107 73037 303415 50585 133472 119358 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+272949 25631 148980 98338 173045 18222 106386 48437 99905 7410 42594 49901 
+367040 47910 170362 148768 182702 26597 94739 61366 184338 21313 75622 87402 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+780578 126415 398273 255890 409263 70839 240250 98174 371315 55576 158023 157716 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+743554 85248 399379 258926 329594 38015 210486 81092 413960 47233 188893 177834 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+234711 13834 117078 103799 99955 4777 58574 36604 134756 9058 58503 67195 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+750852 119811 420473 210568 379514 61853 246155 71505 371338 57958 174317 139063 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+318326 39466 168222 110639 202845 25158 120203 57484 115481 14308 48019 53154 
+198113 40528 105683 51903 109014 23217 64141 21655 89100 17311 41542 30247 
+875540 133278 461610 280652 465983 71678 289982 104323 409557 61599 171628 176329 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+315955 65812 174797 75346 181088 44743 111023 25322 134867 21069 63773 50024 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+81543 11033 38129 32381 38768 6130 20089 12549 42775 4902 18041 19832 
+75840 11033 34564 30243 37898 6130 19219 12549 37942 4902 15345 17694 
+7965 770 5057 2138 2271 770 1501 ".." 5694 ".." 3556 2138 
+116534 6089 51578 58867 46534 1644 25106 19784 69999 4445 26472 39082 
+111538 6089 48155 57293 46534 1644 25106 19784 65004 4445 23049 37509 
+4996 ".." 3422 1573 ".." ".." ".." ".." 4996 ".." 3422 1573 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1545131 305302 843039 396790 789361 130208 499060 160093 755770 175094 343978 236697 
+1284133 189269 706969 387895 664683 90903 417412 156369 619450 98366 289558 231526 
+1108694 133675 592376 382644 565932 65595 347543 152794 542762 68080 244833 229849 
+728236 52615 358420 317201 364951 31056 205779 128116 363285 21559 152641 189085 
+1079850 134697 580464 364688 561542 65872 349089 146581 518307 68825 231375 218107 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+980440 126675 515589 338176 514706 61027 315586 138093 465733 65648 200003 200083 
+647398 90335 322736 234328 322379 38126 185958 98295 325020 52209 136778 136033 
+760921 113760 373805 273357 391397 56598 226862 107937 369524 57161 146943 165420 
+464207 77759 239817 146632 229723 36849 139993 52881 234484 40910 99824 93750 
+280640 34537 157350 88752 185349 21055 112761 51532 95291 13483 44589 37220 
+466710 67287 218408 181015 241761 31920 124830 85011 224948 35367 93577 96004 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+785922 117866 388034 280022 413242 59126 236140 117976 372680 58740 151894 162047 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+742706 90803 391891 260012 338042 36811 209802 91428 404664 53992 182089 168584 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+226037 16283 110520 99233 98669 6696 62522 29452 127367 9587 47999 69782 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+804787 130388 424412 249987 401086 65514 241912 93659 403701 64874 182500 156327 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+354307 61020 136046 157242 170849 30837 77480 62532 183458 30183 58566 94709 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+84074 2631 30020 51424 40607 769 17066 22773 43467 1862 12954 28651 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+311653 56131 118911 136611 150535 26909 68892 54733 161118 29222 50019 81877 
+76838 15596 31134 30108 36056 8243 14826 12987 40782 7353 16307 17122 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+86829 8052 51340 27437 57135 3176 38823 15136 29694 4876 12517 12301 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+207175 29876 99654 77645 100200 16472 53298 30430 106975 13404 46356 47215 
+59872 5077 30429 24366 39933 3485 22849 13599 19939 1592 7580 10767 
+72588 10492 29391 32705 34367 4955 18323 11090 38220 5537 11068 21615 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+105270 19205 32744 53321 54993 13409 17808 23776 50277 5796 14936 29546 
+99270 18609 28461 52200 50410 12813 14942 22654 48860 5796 13518 29546 
+7408 595 5054 1758 5219 595 2866 1758 2188 ".." 2188 ".." 
+142674 8751 63062 70861 70424 5342 35836 29247 72249 3409 27226 41614 
+140766 8751 61855 70160 69217 5342 34629 29247 71549 3409 27226 40914 
+2885 ".." 2184 701 2184 ".." 2184 ".." 701 ".." ".." 701 
+8043 1572 4770 1701 5517 747 4770 ".." 2526 825 ".." 1701 
+8043 1572 4770 1701 5517 747 4770 ".." 2526 825 ".." 1701 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1554845 294581 853237 407027 798631 123820 513259 161551 756214 170761 339977 245476 
+1346516 195801 748680 402035 696509 85996 450358 160154 650007 109804 298321 241881 
+1211137 158294 653865 398978 622928 70702 392072 160154 588209 87592 261793 238823 
+805368 42086 440084 323198 430750 20571 280223 129957 374618 21515 159861 193241 
+1192775 156689 649136 386949 612402 70537 391303 150561 580373 86152 257833 236388 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1097850 142450 593136 362263 557607 63571 347252 146784 540243 78879 245884 215480 
+802679 117291 410074 275314 382851 48917 226744 107190 419828 68374 183330 168123 
+930687 139049 489156 302482 452649 59204 280668 112777 478038 79845 208488 189705 
+546466 104658 275770 166039 258800 45464 156777 56559 287667 59193 118993 109480 
+279965 32027 159663 88275 158308 12266 106321 39721 121657 19761 53341 48554 
+533959 76594 266488 190877 274367 37456 154118 82792 259592 39137 112369 108085 
+937862 135163 489383 313316 490599 61310 304239 125049 447263 73853 185144 188267 
+902641 131451 470708 300482 471058 58528 292395 120135 431582 72922 178313 180347 
+301126 56937 144039 100150 177457 28282 97600 51575 123669 28654 46440 48575 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1026764 130380 559100 337284 493703 56055 309101 128548 533060 74326 249999 208735 
+900396 116043 479090 305263 429108 52298 264139 112671 471288 63746 214951 192592 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+383603 40205 209240 134159 185381 17066 119857 48459 198222 23139 89383 85700 
+301629 31969 164134 105526 151435 11522 97414 42499 150193 20446 66720 63027 
+203897 27067 104408 72422 95132 12002 54784 28347 108765 15065 49625 44076 
+96993 5295 48477 43222 53999 869 33223 19907 42995 4426 15254 23314 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+160379 19904 91170 49305 70384 6377 44375 19632 89995 13527 46795 29673 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1042862 153187 550127 339548 518951 66070 324332 128549 523911 87117 225795 210999 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+554479 65706 281681 207092 309388 35042 175976 98370 245091 30664 105705 108722 
+334501 66415 163422 104664 174917 27342 103137 44438 159584 39073 60285 60226 
+977828 147320 513490 317017 533078 67227 329667 136185 444749 80093 183824 180833 
+471942 75637 201269 195037 226127 37456 108772 79899 245815 38181 92497 115138 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+147282 16025 61300 69958 73840 7290 37651 28899 73442 8735 23649 41059 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+401886 67352 174172 160362 193911 34876 90004 69031 207975 32476 84168 91331 
+133510 20609 56887 56015 65863 9278 35073 21511 67647 11331 21814 34503 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+435454 76623 259316 99515 259661 44717 160481 54463 175793 31905 98835 45052 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1144438 156040 610065 378333 590735 68571 370362 151803 553703 87469 239703 226531 
+1016776 135664 541389 339722 540720 62352 339452 138916 476056 73312 201938 200806 
+348471 53452 165108 129911 198402 31724 102833 63846 150069 21728 62276 66065 
+669948 80610 312193 277145 338034 39096 182060 116878 331913 41514 130132 160267 
+109205 16844 56899 35462 60553 10354 28394 21805 48652 6490 28506 13656 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1568115 292610 860189 415315 806387 132055 499774 174558 761728 160555 360416 240757 
+1395685 219279 763624 412782 716015 106998 435025 173993 679669 112281 328599 238789 
+1266129 171573 689819 404736 648610 83597 394468 170545 617519 87977 295351 234191 
+895815 73393 465024 357398 479065 41371 282957 154738 416750 32022 182067 202661 
+1179248 157122 632813 389313 602370 74635 364120 163615 576878 82487 268693 225698 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1072004 152130 551839 368035 546760 73734 318506 154520 525244 78396 233334 213515 
+967824 151293 471330 345202 479421 66440 270009 142972 488403 84853 201320 202230 
+1007666 161983 500491 345192 485390 71751 271176 142463 522276 90232 229315 202729 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+277579 32666 127703 117209 175909 20842 95961 59106 101669 11824 31742 58103 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1062476 151035 556413 355028 495108 63030 289832 142246 567368 88004 266581 212782 
+850056 125431 436043 288582 385054 49934 223136 111985 465002 75497 212907 176597 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+479163 56177 240179 182807 221812 24055 135190 62567 257352 32122 104989 120240 
+366367 47097 179056 140214 165828 20889 98623 46316 200539 26208 80433 93898 
+282026 25129 136583 120314 123746 8707 68879 46159 158280 16422 67704 74154 
+181894 12540 71387 97967 99149 5108 48756 45286 82745 7432 22631 52681 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+299048 28346 148425 122277 123826 14180 71941 37705 175222 14166 76484 84571 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+997485 155215 522938 319331 497046 80353 288701 127992 500438 74862 234237 191339 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+639580 96709 256256 286615 297252 48928 135993 112330 342328 47781 120263 174284 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+389582 24139 123655 241788 166441 9375 65585 91481 223141 14763 58071 150307 
+330784 83876 125589 121320 144294 41029 59129 44136 186490 42846 66460 77184 
+344617 68218 113827 162571 160108 33353 62569 64186 184509 34865 51259 98385 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+195146 19587 98026 77533 103185 8504 52159 42522 91962 11083 45867 35011 
+185411 24714 97109 63588 110437 13789 60734 35914 74974 10924 36376 27674 
+131665 16563 58971 56130 63095 7418 25494 30184 68569 9145 33477 25947 
+1178126 170699 617705 389721 609202 84827 357165 167210 568924 85872 260541 222511 
+1032867 155623 529486 347758 541067 80400 314612 146056 491800 75223 214875 201702 
+399064 56240 189782 153042 220975 29471 114417 77087 178089 26769 75365 75955 
+724825 106495 341848 276482 371101 53325 196277 121499 353724 53170 145571 154983 
+156898 25560 58638 72699 83899 9533 34671 39696 72998 16028 23967 33003 
+550828 92348 207915 250565 246534 45302 111612 89620 304295 47046 96303 160945 
+389385 27602 130599 231184 168604 14192 70026 84386 220780 13410 60572 146798 
+310980 84731 113758 112491 137551 39907 59468 38176 173429 44823 54290 74315 
+612534 19017 272408 321109 318892 11480 174820 132592 293642 7537 97588 188517 
+576222 16782 252854 306585 297911 9246 161920 126745 278311 7537 90935 179839 
+299309 3454 77519 218337 142430 2471 49728 90231 156879 983 27791 128105 
+179804 4023 52338 123443 103367 3040 41922 58406 76436 983 10417 65037 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1562370 287445 854101 420824 801871 133065 497430 171375 760499 154380 356671 249449 
+1389141 217540 758155 413447 719274 106904 444358 168011 669868 110635 313797 245436 
+1243121 163595 673114 406411 634233 79466 390500 164267 608889 84130 282614 242145 
+888304 80770 458761 348773 452916 42865 265821 144230 435389 37905 192940 204543 
+1177037 166471 625837 384728 600875 83803 363535 153537 576162 82669 262302 231191 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1090293 138477 585163 366654 564028 65100 350056 148872 526265 73377 235106 217781 
+880350 130771 430214 319364 421734 57034 237453 127247 458615 73737 192761 192117 
+1000929 146433 515824 338672 485213 66015 285395 133804 515716 80418 230430 204868 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+279836 31670 147005 101162 159840 18537 97432 43872 119996 13133 49574 57289 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+940576 136022 488911 315643 477470 64345 284250 128876 463105 71678 204661 186767 
+906648 131946 465211 309491 459358 62065 271922 125372 447289 69881 193289 184120 
+250058 47307 128375 74376 139112 26267 75801 37044 110945 21040 52573 37332 
+216350 32959 81571 101820 108073 15208 49656 43209 108277 17751 31915 58611 
+1020323 128290 531717 360316 477539 54785 282476 140279 542784 73506 249242 220037 
+784647 102994 402697 278956 356974 44652 207603 104719 427673 58342 195094 174238 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+414855 40532 207327 166996 175411 15020 101792 58600 239444 25512 105535 108396 
+322921 33937 150221 138763 135540 11362 76177 48001 187381 22575 74044 90762 
+255241 22284 134459 98498 105851 9552 58106 38194 149390 12733 76353 60305 
+485287 40369 223163 221755 219793 17055 116136 86601 265494 23314 107027 135154 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+247465 21170 120568 105728 106920 7091 61798 38032 140545 14079 58770 67696 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+984971 160625 516174 308171 480995 75018 290214 115762 503976 85607 225960 192409 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+728983 91904 398478 238600 408226 50631 252415 105181 320756 41274 146064 133419 
+460088 83026 217285 159776 236217 38201 130609 67406 223871 44825 86676 92370 
+869818 136350 433584 299883 460530 66790 265109 128631 409288 69560 168476 171252 
+579971 79751 235123 265097 262497 35390 125061 102046 317474 44361 110062 163051 
+407520 61190 143104 203226 173103 24994 72989 75120 234417 36196 70115 128106 
+317283 24279 107514 185490 141370 11037 58964 71369 175913 13242 48550 114121 
+164241 48986 53829 61426 59188 17899 23968 17321 105053 31086 29861 44105 
+325377 55039 132627 137710 157936 25024 77290 55622 167441 30015 55338 82088 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+247460 41662 83489 122310 104453 16214 41709 46529 143008 25448 41780 75780 
+152097 61277 61938 28882 59213 24772 25806 8635 92884 36505 36131 20247 
+337649 9909 118822 208918 163805 4310 78773 80723 173844 5599 40050 128195 
+298053 36196 133461 128396 142197 17429 71646 53123 155855 18766 61816 75273 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+319362 65879 166561 86923 161816 30948 93254 37614 157546 34930 73306 49309 
+169571 27966 87410 54195 79750 9838 45816 24096 89821 18128 41594 30099 
+433951 72975 226049 134927 219907 34587 130623 54696 214044 38388 95425 80231 
+108923 13227 46818 48878 50900 6057 28683 16160 58023 7170 18135 32718 
+763170 96403 376498 290269 405285 46270 230522 128494 357884 50133 145975 161776 
+502526 57533 252930 192063 279251 27073 162646 89531 223275 30460 90284 102532 
+170045 22468 75211 72366 102151 11471 50468 40211 67894 10996 24742 32155 
+504663 64392 228061 212210 257587 30127 134661 92799 247076 34265 93401 119411 
+79331 12792 31064 35476 44151 8428 22444 13279 35181 4364 8620 22197 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1566755 282940 852863 430952 804482 133858 476814 193810 762273 149083 376049 237142 
+1416001 215227 774592 426182 731259 104504 433900 192855 684742 110724 340692 233326 
+1271570 164933 685773 420864 655761 85083 380873 189805 615809 79850 304900 231059 
+950902 88236 492589 370078 504967 51861 278648 174458 445935 36375 213941 195619 
+1199556 157161 645335 397059 619439 80842 360436 178161 580117 76320 284899 218898 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1074191 132526 579104 362562 559891 66469 323363 170059 514300 66057 255740 192503 
+897539 136922 454107 306509 446607 66786 245629 134192 450932 70136 208478 172318 
+1036534 152293 534999 349242 519109 72884 291785 154439 517425 79409 243214 194802 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+276306 22558 148698 105050 175634 16859 102207 56568 100671 5698 46491 48482 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1014134 127243 532079 354812 475559 55657 271447 148456 538574 71586 260632 206356 
+804468 112438 415474 276556 355734 46235 199226 110273 448734 66203 216248 166283 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+462987 39240 242848 180899 205137 18590 115102 71445 257850 20650 127746 109454 
+349011 27021 184030 137959 153885 11745 85095 57045 195126 15276 98935 80914 
+300492 25453 158576 116463 133114 11425 73945 47745 167377 14028 84632 68718 
+387651 28474 176319 182858 184861 13851 90801 80209 202790 14623 85518 102649 
+367444 27603 168853 170987 177148 13499 86606 77043 190296 14104 82248 93944 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+73110 5284 31246 36579 32877 3546 13222 16109 40233 1739 18024 20470 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+191365 20165 98256 72943 83359 7976 44660 30723 108005 12189 53596 42220 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+994228 157894 530298 306035 490641 76182 290833 123626 503587 81712 239466 182409 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+541244 86658 211227 243359 263011 44497 112377 106137 278234 42161 98850 137222 
+319080 38022 108635 172423 143885 20835 52663 70387 175195 17187 55972 102036 
+250260 16691 76880 156689 113738 9055 41529 63154 136523 7637 35352 93534 
+123282 29254 44378 49650 55951 15437 17569 22945 67330 13817 26809 26704 
+385129 78427 147924 158778 198031 39725 86520 71786 187098 38702 61404 86991 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+184511 34812 64358 85340 88723 17693 32863 38167 95788 17119 31496 47174 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+161280 28027 78818 54435 67279 14036 32930 20313 94001 13991 45889 34122 
+318629 49050 169539 100039 166463 27432 98059 40973 152166 21619 71481 59066 
+54809 9441 20367 25001 24690 2596 10680 11414 30119 6846 9687 13587 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1570745 281401 851004 438340 807830 134836 486232 186762 762915 146565 364772 251578 
+1425664 219950 772669 433045 731418 106723 440466 184230 694245 113227 332203 248815 
+1283783 164483 694441 424859 662274 83247 397813 181214 621509 81236 296628 243645 
+1004815 102459 524684 377671 521608 52298 306816 162493 483207 50161 217868 215178 
+1239288 173891 660163 405235 629906 80344 374837 174726 609381 93546 285326 230509 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1059597 131553 563411 364632 540187 66467 314715 159004 519410 65085 248697 205628 
+950514 142605 472346 335562 474264 66624 262148 145492 476250 75981 210198 190071 
+1108369 160704 575468 372197 547936 78297 314486 155153 560434 82407 260982 217044 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+298828 29068 146528 123232 183089 17380 100036 65673 115739 11688 46492 57559 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1044959 151401 542832 350727 552531 76540 323175 152816 492429 74861 219657 197910 
+1014288 147616 522970 343702 538572 75395 314196 148981 475717 72221 208774 194722 
+240123 41481 112341 86302 132679 22625 64017 46037 107444 18856 48323 40265 
+321920 33790 137633 150498 169500 15925 85828 67748 152420 17864 51805 82750 
+1044792 139639 545021 360132 480983 58843 282998 139143 563809 80797 262023 220989 
+885974 119146 462277 304551 394068 48108 231329 114631 491906 71038 230948 189919 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+521623 48459 266563 206601 236504 19702 138575 78227 285119 28757 127988 128374 
+413484 35869 217577 160039 186380 12157 113399 60824 227104 23711 104178 99215 
+346662 30173 171247 145243 163296 13158 89439 60699 183366 17015 81807 84544 
+422671 31714 195661 195296 199494 8815 106249 84430 223177 22899 89412 110866 
+399947 29214 184414 186320 186235 7972 98587 79676 14606 21242 85827 106643 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+94542 7299 43476 43767 44676 2312 22306 20059 49866 4987 21171 23709 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+223454 16932 108022 98500 98626 6566 54276 37785 124828 10367 53746 60715 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1014047 151012 541580 321454 507139 73031 299718 134391 506907 77981 241863 187064 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+849056 114921 451684 282451 456032 57333 272606 126093 393024 57588 179078 156358 
+586258 89280 281733 215246 302097 41525 154470 106101 284162 47754 127262 109146 
+953014 146286 485703 321025 508263 78341 280011 149911 444751 67945 205692 171114 
+560813 79756 221509 259548 280396 39780 126497 114119 280417 39977 95012 145429 
+338350 33102 129084 176164 154768 17807 64818 72144 183582 15296 64266 104020 
+272665 15868 97388 159409 128798 10338 55091 63370 143867 5530 42297 96039 
+134953 22504 63826 48624 60570 10807 29057 20706 74383 11697 34768 27918 
+404614 72263 154700 177651 217708 35061 94813 87834 186906 37203 59887 89816 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+193545 29956 74065 89524 85124 14184 31999 38941 108420 15772 42066 50583 
+170398 57301 77439 35657 83257 26893 40120 16244 87141 30408 37319 19413 
+310431 13395 103261 193776 151481 8014 58479 84988 158951 5381 44782 108788 
+302696 40484 125175 137037 165147 21954 77147 66046 137549 18531 48027 70991 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+370301 78700 196976 94625 207006 44417 117670 44919 163295 34283 79306 49706 
+204358 31887 97244 75227 95397 12755 50537 32105 108961 19132 46707 43122 
+504729 83588 251279 169863 246334 40133 134708 71493 258395 43455 116571 98370 
+88358 9229 41046 38083 42774 2219 26532 14023 45584 7009 14515 24060 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1575204 280686 848405 446114 810206 136049 482166 191992 764998 144637 366239 254122 
+1442368 221991 776835 443542 742113 111496 440376 190241 700255 110495 336459 253302 
+1308563 173367 696930 438266 673303 90816 394139 188348 635260 82551 302791 249918 
+1033493 106812 537995 388686 530088 53999 305053 171036 503406 52813 232943 217651 
+1249106 167784 663300 418021 631189 81156 373418 176616 617917 86629 289883 241406 
+652720 79473 312499 260748 309759 36044 163585 110130 342961 43429 148914 150618 
+1090647 145167 557080 388400 561757 73700 316240 171817 528889 71467 240839 216583 
+974954 160998 476238 337718 492645 82050 262519 148076 482309 78948 213719 189642 
+1158241 182943 587813 387485 575061 92263 318244 164554 583180 90680 269569 222931 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+282830 29840 144621 108370 184120 20874 102093 61152 98710 8965 42528 47217 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1007963 129625 516649 361689 451970 54598 253833 143539 555993 75027 262816 218150 
+875313 114902 438717 321694 382452 47183 212195 123074 492861 67719 226521 198620 
+552287 67766 263441 221081 224494 22923 118111 83460 327793 44843 145330 137621 
+252383 38759 118835 94789 83951 11070 44191 28690 168432 27689 74644 66099 
+461697 36851 235352 189493 201382 15562 114265 71555 260315 21290 121087 117938 
+337841 23950 168912 144979 145461 9361 80973 55127 192380 14588 87940 89852 
+313013 26492 153788 132733 132384 12034 68678 51672 180629 14458 85110 81061 
+431641 29123 199167 203351 191383 14955 98655 77772 240258 14168 100512 125578 
+376605 24474 176286 175846 168629 12372 86539 69718 207976 12101 89747 106128 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+136055 10716 51759 73580 56363 6054 24227 26082 79692 4662 27531 47498 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+221715 20598 109750 91368 95159 11743 48556 34859 126556 8855 61193 56508 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1030618 161491 537532 331596 522433 83079 299375 139979 508185 78411 238157 191617 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+611928 100413 226589 284926 286752 49267 122064 115422 325175 51146 104524 169505 
+342203 37347 116122 188735 145893 18133 57232 70527 196310 19213 58890 118207 
+273693 13573 89409 170712 118667 7242 45740 65684 155026 6331 43668 105027 
+130187 27993 47776 54418 54638 13268 20133 21237 75548 14725 27642 33181 
+476491 91051 173062 212378 224491 43750 91733 89008 251999 47300 81329 123370 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+204420 38548 68378 97494 89778 19104 33863 36811 114642 19444 34515 60683 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+189150 32035 98598 58517 96364 15913 52979 27472 92786 16122 45619 31045 
+505063 72950 252610 179503 258936 37387 139562 81988 246127 35564 113048 97515 
+85010 10293 35615 39102 42366 3430 19570 19366 42644 6863 16045 19736 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1575749 281145 841229 453375 810534 130458 493638 186438 765215 150687 347592 266937 
+1471931 236004 785481 450446 753800 110923 457800 185077 718132 125082 327681 265370 
+1321792 183803 693862 444126 667850 86754 398393 182703 653942 97049 295469 261423 
+1126440 137937 576984 411519 570285 66988 335184 168112 556155 70949 241800 243406 
+1291664 192072 670537 429055 646291 90530 382955 172805 645373 101542 287582 256249 
+738000 99745 370709 267546 337958 43486 194406 100066 400042 56259 176303 167480 
+1089324 132212 573486 383626 551302 60378 329691 161233 538021 71835 243795 222392 
+1036092 154891 531444 349757 519831 70778 304946 144107 516261 84113 226498 205650 
+1236597 189154 637993 409450 612090 86770 363670 161650 624507 102385 274322 247801 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+306513 30071 146826 129616 175497 13495 92644 69359 131015 16576 54183 60257 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1082621 161222 548849 372550 557606 76831 323124 157651 525015 84391 225725 214898 
+1070663 157026 545588 368049 551592 75281 321371 154940 519071 81746 224217 213109 
+221819 43769 91977 86073 134178 22831 61481 49865 87641 20937 30495 36208 
+402570 43835 172947 185787 199197 20666 109574 68958 203373 23170 63373 116829 
+1079699 139511 558951 381237 505699 50050 306940 148709 574000 89461 252011 232529 
+975014 131288 509683 334043 443034 47201 277257 118576 531980 84087 232426 215467 
+675072 80990 344067 250015 295928 28148 185187 82593 379144 52843 158880 167422 
+293111 39546 136858 116708 112853 10816 73140 28897 180259 28729 63718 87812 
+583259 56629 291140 235489 264549 21804 153897 88849 318710 34826 137244 146641 
+458694 41841 227176 189678 208222 15422 119474 73326 250472 26419 107701 116352 
+372247 31413 181521 159314 162034 10705 96037 55291 210214 20707 85484 104022 
+644554 57161 306488 280905 288235 23877 156560 107798 356318 33285 149927 173106 
+584562 52891 275347 256324 269367 23434 142245 103688 315196 29457 133103 152636 
+442853 41016 206600 195237 204484 15277 106331 82877 238368 25739 100269 112360 
+431544 33226 206414 191904 194822 15599 103589 75634 236722 17627 102826 116269 
+193426 10650 92776 89999 79793 3259 44647 31888 113632 7392 48130 58111 
+254600 19519 126735 108346 109024 8409 57657 42959 145576 11110 69078 65387 
+189795 19374 89895 80526 73835 3770 45701 24364 115960 15604 44195 56162 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+1091288 175603 563152 352533 536513 80349 320976 135187 554775 95254 242175 217346 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+915788 128714 475715 311358 488236 63471 287790 136976 427551 65243 187925 174383 
+611999 111707 297185 203108 310935 53271 176291 81373 301064 58436 120894 121734 
+982512 150210 497573 334730 526054 72027 306840 147186 456458 78183 190732 187543 
+644085 99427 255764 288893 311772 46700 152269 112803 332312 52727 103496 176090 
+357141 31406 127027 198708 152267 10867 68839 72561 204875 20539 58189 126147 
+282278 10818 89253 182207 113901 4608 46529 62764 168377 6210 42724 119443 
+131734 25690 59927 46116 64361 8773 33539 22049 67372 16917 26388 24067 
+499314 90471 203771 205072 259803 40897 132577 86328 239511 49573 71193 118744 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+199056 34890 71234 92932 89496 16291 38594 34611 109560 18599 32640 58321 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+427797 90131 216735 120931 247292 45738 141374 60180 180506 44393 75361 60752 
+202098 23747 101993 76357 97521 8703 60990 27827 104577 15044 41003 48530 
+579141 89193 299036 190912 287386 40207 170473 76706 291754 48986 128563 114206 
+106543 13192 45189 48161 61605 5666 32953 22986 44938 7527 12236 25175 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." 
+".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".." ".."; 

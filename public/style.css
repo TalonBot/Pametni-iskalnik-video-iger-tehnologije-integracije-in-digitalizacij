@@ -6,3 +6,5 @@
 dialog table{width:100%;border-collapse:collapse;font-size:11px}dialog th,dialog td{text-align:left;padding:5px;border-bottom:1px solid #333}dialog details{margin:15px 0}dialog summary{cursor:pointer}dialog details img{margin-top:15px}
 
 .filter-help{font-size:11px;color:#999;line-height:1.7;margin-top:14px;max-width:850px}
+
+.open-data-link{font-size:11px;color:#ccc;white-space:nowrap}.open-data-link:hover{color:white;text-decoration:underline}@media(max-width:720px){.open-data-link{font-size:10px}.topbar{flex-wrap:wrap;height:auto;min-height:70px;padding-top:15px;padding-bottom:15px}.topbar .local{font-size:7px}}

@@ -22,3 +22,4 @@ data/*.tmp
 data/checkpoint.json
 data/parser.lock
 server.local*.log
+naloga3/data/*.tmp
