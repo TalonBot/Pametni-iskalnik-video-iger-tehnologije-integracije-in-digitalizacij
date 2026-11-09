@@ -1,9 +1,12 @@
 import http from 'node:http';
+import { loadEnvFile } from 'node:process';
+import { handleLlm } from './naloga4/routes.js';
 import { handleOpenData } from './naloga3/routes.js';
 import { scrapeFreeGames } from './parser/free.js';
 import { readFile } from 'node:fs/promises';
 import { readGames, scrapeGames } from './parser/steam.js';
 
+try { loadEnvFile(new URL('./.env', import.meta.url)); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 const port = Number(process.env.PORT || 3000);
 const files = { '/': ['index.html', 'text/html'], '/app.js': ['app.js', 'text/javascript'], '/filters.js': ['filters.js', 'text/javascript'], '/style.css': ['style.css', 'text/css'] };
 let status = { running: false, message: '', error: null };
@@ -13,6 +16,7 @@ const send = (res, code, data) => { res.writeHead(code, { 'Content-Type': 'appli
 http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
+    if (await handleLlm(req, res, url)) return;
     if (await handleOpenData(req, res, url)) return;
     if (req.method === 'GET' && url.pathname === '/api/games') {
       try { return send(res, 200, await readGames()); }

@@ -12,7 +12,8 @@
     "test": "node --test",
     "parse:free": "node parser/free-cli.js",
     "parse:offline": "node parser/reparse.js",
-    "test:naloga3": "node --test naloga3/data.test.js"
+    "test:naloga3": "node --test naloga3/data.test.js",
+    "test:naloga4": "node --test naloga4/llm.test.js"
   },
   "repository": {
     "type": "git",

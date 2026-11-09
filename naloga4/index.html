@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Osebna priporočila videoiger z LLM glede na tvoje želje, platformo in proračun.">
+  <title>PLAY / Tvoj AI soigralec</title>
+  <link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/naloga4/style.css">
+  <script type="module" src="/naloga4/app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/">PLAY<span class="brand-dot">/</span></a><nav aria-label="Glavna navigacija"><a href="/">Iskalnik iger</a><a href="/naloga3/">Videoigre v številkah</a><a href="/naloga4/" aria-current="page">AI priporočila</a></nav><span class="local"><i></i> GOOGLE GEMINI</span></header>
+  <main>
+    <section class="hero"><div class="eyebrow"><span>04 / UMETNA INTELIGENCA</span><span>TVOJE ŽELJE → NOVA ODKRITJA</span></div><div class="hero-content"><div><h1>Tvoj okus.<br><span>Naslednji play.</span></h1><p>Povej, kaj te pritegne. AI bo v naši Steamovi zbirki poiskal<br class="desktop"> do tri igre zate in pojasnil, zakaj jih je izbral.</p></div><div class="hero-mark" aria-hidden="true">✳<span>MANJ UGIBANJA. VEČ IGRANJA.</span></div></div></section>
+    <section class="recommend-layout" aria-labelledby="form-title">
+      <div class="preferences"><div class="eyebrow">01 / POVEJ NAM VEČ</div><h2 id="form-title">Kaj bi igral danes?</h2>
+        <form id="preferences">
+          <label for="wishes">Tvoje želje <span>obvezno</span></label>
+          <textarea id="wishes" name="zelje" minlength="10" maxlength="1000" rows="5" required placeholder="Npr. Rad imam raziskovanje in dobro zgodbo. Iščem sproščeno igro brez tekmovalnega pritiska, podobno igri Stardew Valley."></textarea>
+          <div class="form-grid">
+            <div><label for="ai-platform">Platforma</label><select id="ai-platform" name="platforma"><option>Windows</option><option>macOS</option><option>Linux</option></select></div>
+            <div><label for="budget">Proračun (€)</label><input id="budget" name="proracun" type="number" min="0" max="500" step="0.01" value="25" required aria-describedby="budget-help"></div>
+            <div><label for="ai-genre">Zvrst</label><select id="ai-genre" name="zvrst"><option value="">Vse zvrsti</option></select></div>
+            <div><label for="mode">Način igranja</label><select id="mode" name="nacin"><option value="vseeno">Vseeno</option><option value="sam">Sam</option><option value="s prijatelji">S prijatelji</option></select></div>
+          </div>
+          <p class="hint" id="budget-help">0 € poišče brezplačne igre. Platforma, zvrst in proračun omejijo izbor; način igranja in opis usmerjata AI.</p>
+          <p class="hint">Ponudniku Google Gemini pošljemo vnesene želje, izbrane nastavitve in do 40 kandidatov iz kataloga.</p>
+          <button class="button" id="generate" type="submit">Poišči moje igre ↗</button>
+        </form>
+      </div>
+      <div class="recommendations"><div class="eyebrow">02 / IZBRANO ZATE</div><h2>Tvoja naslednja trojica</h2>
+        <p id="connection" class="hint" role="status">Preverjam povezavo …</p>
+        <p id="ai-status" class="status" role="status" aria-live="polite"></p>
+        <div id="placeholder" class="empty"><span aria-hidden="true">✳</span><h3>Začni s svojim okusom.</h3><p>Izpolni obrazec in odkrij igre, ki ustrezajo tvojim željam.</p></div>
+        <div id="output" hidden><p id="summary"></p><p id="provenance" class="hint"></p><div id="recommendations"></div>
+          <details class="parser-report"><summary>Kako je AI prišel do izbire?</summary><p>Dinamično sestavljen prompt</p><pre id="prompt"></pre><p>Preverjen odgovor JSON → razred LlmOdgovor → razredi PriporociloIgre</p><pre id="json"></pre><button type="button" class="button quiet" id="export">Prenesi rezultat JSON ↙</button></details>
+        </div>
+      </div>
+    </section>
+    <p class="data-note">AI lahko pri razlagi naredi napako. Imena, cene in povezave dopolnimo iz lokalne Steamove zbirke. Cene so veljale ob zajemu; pred nakupom preveri ponudbo na Steamu.</p>
+  </main>
+  <footer><a class="brand" href="/">PLAY /</a><span>Tehnologije integracije in digitalizacij · Tilen Gabor</span><a href="https://ai.google.dev/gemini-api/docs/structured-output" target="_blank" rel="noopener noreferrer">Google Gemini · strukturirani podatki ↗</a></footer>
+</body>
+</html>
