@@ -1,6 +1,6 @@
 # Naloga 5 – gRPC: Igre v toku
 
-Nadgradnja obstoječega pametnega iskalnika videoiger v Node.js. Uporabnik izbere filtre in zahteva seznam, podrobnosti igre, statistiko ali sprotno pretakanje iger. Uporablja se dejanski shranjeni katalog iz naloge 2 (`readGames`, vključno z brezplačnimi igrami).
+Nadgradnja obstoječega pametnega iskalnika videoiger v Node.js. Po nalogi 6 vsi RPC klici berejo katalog iz baze SQLite; začetni uvoz iz JSON in samodejno osveževanje sta opisana v [nalogi 6](../naloga6/README.md). Uporabnik izbere filtre in zahteva seznam, podrobnosti igre, statistiko ali sprotno pretakanje iger. Uporablja se dejanski shranjeni katalog iz naloge 2 (`readGames`, vključno z brezplačnimi igrami).
 
 ## Zagon
 

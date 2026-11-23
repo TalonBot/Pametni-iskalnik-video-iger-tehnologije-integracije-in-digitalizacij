@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
-import { readGames } from '../parser/steam.js';
+import { readGames } from '../naloga6/catalog.js';
+import { getStore } from '../naloga6/store.js';
 import { LlmError, recommend } from './llm.js';
 
 const files = new Map([
@@ -32,7 +33,8 @@ export async function handleLlm(req, res, url) {
       let input;
       try { input = JSON.parse(Buffer.concat(chunks).toString('utf8')); } catch { throw new LlmError('Telo zahteve ni veljaven JSON.', 400); }
       busy = true;
-      try { const result = await recommend(await readGames(), input); lastRun = Date.now(); json(200, result); }
+      try { const result = await recommend(await readGames(), input); getStore().mark('gemini', null, true); lastRun = Date.now(); json(200, result); }
+      catch (error) { getStore().mark('gemini', error instanceof LlmError ? error.message : 'Priporočil ni mogoče pripraviti.'); throw error; }
       finally { busy = false; }
     } else if (req.method !== 'GET') {
       res.setHeader('Allow', 'GET'); json(405, { error: 'Dovoljen je samo GET.' });

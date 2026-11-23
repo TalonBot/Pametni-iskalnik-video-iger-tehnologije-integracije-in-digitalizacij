@@ -15,7 +15,9 @@
     "test:naloga3": "node --test naloga3/data.test.js",
     "test:naloga4": "node --test naloga4/llm.test.js",
     "grpc": "node naloga5/server.js",
-    "test:naloga5": "node --test naloga5/grpc.test.js"
+    "test:naloga5": "node --test naloga5/grpc.test.js",
+    "test:naloga6": "node --test naloga6/project.test.js",
+    "db:import": "node naloga6/import.js"
   },
   "repository": {
     "type": "git",
@@ -33,12 +35,13 @@
     "@grpc/proto-loader": "^0.8.1",
     "chart.js": "^4.5.1",
     "cheerio": "^1.2.0",
+    "fast-xml-parser": "^5.12.1",
     "px": "^0.1.2"
   },
   "type": "module",
   "private": true,
   "engines": {
-    "node": ">=22"
+    "node": ">=22.14.0"
   },
   "overrides": {
     "underscore": "^1.13.8"

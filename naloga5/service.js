@@ -1,6 +1,6 @@
 import { once } from 'node:events';
 import { setTimeout as delay } from 'node:timers/promises';
-import { readGames } from '../parser/steam.js';
+import { readGames } from '../naloga6/catalog.js';
 import { filterGames, euroPrice } from '../public/filters.js';
 import { grpc, IgreService } from './protocol.js';
 

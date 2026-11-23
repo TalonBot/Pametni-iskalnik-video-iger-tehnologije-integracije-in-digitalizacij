@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-23T17:48:42.277Z",
+  "catalogCount": 2373,
+  "externalSources": [
+    {
+      "name": "Steam Store",
+      "technology": "Web scraping / HTML",
+      "lastSuccess": "2026-11-23T17:43:20.214Z"
+    },
+    {
+      "name": "SURS",
+      "technology": "PCAxis",
+      "lastSuccess": "2026-11-23T17:43:00.781Z"
+    },
+    {
+      "name": "CheapShark",
+      "technology": "REST / JSON",
+      "lastSuccess": "2026-11-23T17:43:28.123Z"
+    },
+    {
+      "name": "Evropska centralna banka",
+      "technology": "XML",
+      "lastSuccess": "2026-11-23T17:43:00.753Z"
+    }
+  ],
+  "comparison": {
+    "appId": "374040",
+    "name": "Portal Knights",
+    "offerCount": 8,
+    "exchangeDate": "2026-11-23"
+  },
+  "databaseSurvivesRestart": true,
+  "grpcStream": true,
+  "automatedTests": 49,
+  "llm": {
+    "status": "provider-unavailable",
+    "httpStatus": 503,
+    "reason": "Gemini reported temporary high demand during verification; the four independent data sources work."
+  }
+}

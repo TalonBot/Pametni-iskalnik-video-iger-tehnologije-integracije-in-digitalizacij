@@ -2,6 +2,12 @@
 
 **Avtor:** Tilen Gabor | **Predmet:** Tehnologije integracije in digitalizacij
 
+## Naloga 6 – končna aplikacija
+
+**PLAY: poišči igro, primerjaj ponudbe in uredi svoj seznam igranja.** Backend Node.js, frontend HTML/CSS/JavaScript in baza SQLite. Štirje neodvisni podatkovni viri: Steam (web scraping), SURS (PCAxis), CheapShark (REST) in ECB (XML); dodatno Google Gemini. Iskanje uporablja tudi našo gRPC storitev. Samodejno osveževanje in predpomnilnik ohranita uporabnost ob izpadih.
+
+Zagon: **Node.js 22.14+**, `npm ci`, `npm start`, nato **http://127.0.0.1:3000/naloga6/**. Baza in začetni uvoz se pripravita samodejno. Na strani lahko iščeš, filtriraš, primerjaš ponudbe ter dodajaš, urejaš in brišeš igre s seznama. [Celotna navodila, viri, intervali, baza, API in zagovor](naloga6/README.md). Testi: `npm test` ali `npm run test:naloga6`.
+
 ## Naloga 5 – gRPC
 
 Izvedba je v mapi [naloga5/](naloga5/README.md). Storitev `IgreService` ima štiri RPC klice: iskanje, podrobnosti, statistika in strežniško pretakanje. Stran sproti prikazuje igre in delne izračune, podpira filtre ter prekinitev toka. Zagon `npm ci` in `npm start`, nato **http://127.0.0.1:3000/naloga5/**. API ključ ni potreben. [Navodila, arhitektura in primer zagovora](naloga5/README.md). Testi: `npm run test:naloga5`.
@@ -33,7 +39,7 @@ Datoteke za **nalogo 2 (razčlenjevalnik spletnih vsebin)** so v tem repozitorij
 
 Izvorni HTML dokumenti v `data/raw/` in vmesni napredek `data/checkpoint.json` nastanejo pri zajemu in ostanejo lokalni (izključeni so iz Gita). Za ponovitev brez interneta najprej izvedite spletni zajem, da se ti podatki ustvarijo tudi na drugem računalniku.
 
-## Povzetek
+## Prvotni načrt projekta (naloga 1)
 
 Razvil bom aplikacijo, ki bo uporabniku pomagala najti igro za igranje. Omogočil bom iskanje po imenu, filtre in sortiranje, uporabnik pa bo lahko primerjal tudi cene. V aplikacijo bom povezal Steam račun, da bom priporocila lahko prilagodil uporabnikovi knjižnici, času igranja in prejsnjim izbiram.
 

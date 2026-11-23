@@ -8,3 +8,5 @@ dialog table{width:100%;border-collapse:collapse;font-size:11px}dialog th,dialog
 .filter-help{font-size:11px;color:#999;line-height:1.7;margin-top:14px;max-width:850px}
 
 .open-data-link{font-size:11px;color:#ccc;white-space:nowrap}.open-data-link:hover{color:white;text-decoration:underline}@media(max-width:720px){.open-data-link{font-size:10px}.topbar{flex-wrap:wrap;height:auto;min-height:70px;padding-top:15px;padding-bottom:15px}.topbar .local{font-size:7px}}
+
+.manage-game{display:block;margin-top:16px;color:#c7f36b;font-size:12px;text-decoration:underline;text-underline-offset:4px}.topbar{height:auto;min-height:90px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
