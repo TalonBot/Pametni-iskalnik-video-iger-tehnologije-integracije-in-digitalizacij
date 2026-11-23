@@ -13,7 +13,9 @@
     "parse:free": "node parser/free-cli.js",
     "parse:offline": "node parser/reparse.js",
     "test:naloga3": "node --test naloga3/data.test.js",
-    "test:naloga4": "node --test naloga4/llm.test.js"
+    "test:naloga4": "node --test naloga4/llm.test.js",
+    "grpc": "node naloga5/server.js",
+    "test:naloga5": "node --test naloga5/grpc.test.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
   },
   "homepage": "https://github.com/TalonBot/Pametni-iskalnik-video-iger-tehnologije-integracije-in-digitalizacij#readme",
   "dependencies": {
+    "@grpc/grpc-js": "^1.14.7",
+    "@grpc/proto-loader": "^0.8.1",
     "chart.js": "^4.5.1",
     "cheerio": "^1.2.0",
     "px": "^0.1.2"

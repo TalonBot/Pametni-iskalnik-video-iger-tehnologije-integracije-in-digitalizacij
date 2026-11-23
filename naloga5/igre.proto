@@ -1,0 +1,57 @@
+syntax = "proto3";
+package play;
+
+service IgreService {
+  rpc PoisciIgre (IskanjeZahtevek) returns (SeznamOdgovor);
+  rpc PridobiIgro (IgraZahtevek) returns (IgraOdgovor);
+  rpc PridobiStatistiko (FilterZahtevek) returns (StatistikaOdgovor);
+  rpc PretakajIgre (IskanjeZahtevek) returns (stream TokOdgovor);
+}
+
+message FilterZahtevek {
+  string query = 1;
+  string platform = 2;
+  string genre = 3;
+  optional double max_price = 4;
+  bool free_only = 5;
+  string sort = 6;
+}
+message IskanjeZahtevek {
+  FilterZahtevek filter = 1;
+  uint32 limit = 2; // 0 = privzeto 24, največ 100
+  uint32 offset = 3;
+}
+message IgraZahtevek { uint32 app_id = 1; }
+message Igra {
+  uint32 app_id = 1;
+  string name = 2;
+  string description = 3;
+  optional double price = 4; // odsotno = neznana cena; 0 = brezplačno
+  string currency = 5;
+  repeated string genres = 6;
+  repeated string platforms = 7;
+  optional double rating = 8;
+  string url = 9;
+  string image = 10;
+}
+message SeznamOdgovor {
+  repeated Igra games = 1;
+  uint32 total = 2;
+  string parsed_at = 3;
+}
+message IgraOdgovor { Igra game = 1; string parsed_at = 2; }
+message StatistikaOdgovor {
+  uint32 total = 1;
+  uint32 free_count = 2;
+  uint32 priced_count = 3;
+  optional double average_price = 4; // EUR, vključno z brezplačnimi
+  string parsed_at = 5;
+}
+message TokOdgovor {
+  Igra game = 1; // zadnje sporočilo nima igre
+  uint32 received = 2;
+  uint32 total = 3; // vsi zadetki, pred omejitvijo strani
+  uint32 expected = 4; // število iger na izbrani strani
+  bool done = 5;
+  StatistikaOdgovor partial_stats = 6;
+}

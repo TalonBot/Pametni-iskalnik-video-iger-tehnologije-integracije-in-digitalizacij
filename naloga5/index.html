@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLAY / Igre v toku</title>
+  <link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/naloga5/style.css">
+  <script type="module" src="/naloga5/app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/">PLAY<span class="brand-dot">/</span></a><nav aria-label="Glavna navigacija"><a href="/">Iskalnik iger</a><a href="/naloga3/">Videoigre v številkah</a><a href="/naloga4/">AI priporočila</a><a href="/naloga5/" aria-current="page">Igre v toku</a></nav><span class="local"><i></i> gRPC</span></header>
+  <main>
+    <section class="hero"><div class="eyebrow"><span>05 / IGRE V TOKU</span><span>IZBERI · PREJMI · RAZIŠČI</span></div><div class="hero-content"><div><h1>Odkritja.<br><span>V živo.</span></h1><p>Izberi svoje filtre. Rezultati prihajajo sproti,<br class="desktop"> z vsako igro pa se dopolnjuje pregled izbora.</p></div><div class="hero-mark" aria-hidden="true">↓<span>EN ZAHTEVEK. TOK ODKRITIJ.</span></div></div></section>
+    <section class="library" aria-labelledby="search-title"><div class="section-heading"><div><div class="eyebrow">TVOJA IZBIRA, TVOJ TOK</div><h2 id="search-title">Poišči svoj naslednji play.</h2></div></div>
+      <form id="search-form">
+        <div class="fields"><div class="wide"><label for="query">Kaj želiš igrati?</label><input id="query" name="query" type="search" maxlength="200" placeholder="Naslov, zvrst ali oznaka …"></div><div><label for="platform">Platforma</label><select id="platform" name="platform"><option value="">Vse platforme</option><option>Windows</option><option>macOS</option><option>Linux</option></select></div><div><label for="max-price">Najvišja cena (€)</label><input id="max-price" name="maxPrice" type="number" min="0" step="0.01" placeholder="Brez omejitve"></div><div><label for="sort">Razvrsti po</label><select id="sort" name="sort"><option value="popular">Priljubljenosti</option><option value="price-asc">Najnižji ceni</option><option value="rating">Najboljši oceni</option><option value="name">Naslovu</option></select></div><div><label for="limit">Število rezultatov</label><select id="limit" name="limit"><option>12</option><option selected>24</option><option>48</option><option>100</option></select></div></div>
+        <label class="free-check"><input type="checkbox" id="free-only" name="freeOnly"> Samo brezplačne igre</label>
+        <div class="actions"><button class="button" type="submit">Začni pretakanje ↓</button><button class="button quiet" id="list" type="button">Prikaži seznam</button><button class="button quiet" id="statistics" type="button">Statistika zadetkov</button><button class="button quiet" id="stop" type="button" disabled>Ustavi tok</button></div>
+      </form>
+      <p class="hint">Podatki iz zadnjega shranjenega zajema Steam. Sprotni prikaz pomeni pretakanje rezultatov, cene pa se med tokom ne osvežujejo.</p>
+      <p id="status" role="status" aria-live="polite">Za začetek izberi filtre in način prikaza.</p>
+      <progress id="progress" value="0" max="1" hidden aria-label="Napredek pretakanja"></progress>
+      <div class="stats" aria-label="Obdelava rezultatov"><div><span class="stat-label">OBDELANIH IGER</span><strong id="count">—</strong></div><div><span class="stat-label">BREZPLAČNIH</span><strong id="free-count">—</strong></div><div><span class="stat-label">POVPREČNA CENA</span><strong id="average">—</strong></div><div><span class="stat-label">OBSEG IZRAČUNA</span><strong class="scope" id="scope">Prejeti del toka</strong></div></div>
+      <p class="hint" id="snapshot">Povprečje vključuje znane cene v EUR in brezplačne igre.</p>
+      <div class="game-grid" id="games" aria-label="Rezultati iskanja"></div>
+    </section>
+    <details class="parser-report"><summary>Kako deluje povezava?</summary><p>Brskalnik → spletni strežnik (gRPC odjemalec) → IgreService (Protocol Buffers / HTTP/2). Pretočni odgovor spletni strežnik posreduje brskalniku prek SSE. Seznam, podrobnosti, statistika in pretakanje uporabljajo štiri različne RPC klice.</p><p>Med pretakanjem se na strežniku sproti izračunava število prejetih in brezplačnih iger ter povprečna cena prejetega dela. Gumb »Statistika zadetkov« izračuna statistiko vseh zadetkov trenutnih filtrov.</p></details>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title"><button id="close-detail" class="button quiet" autofocus>Zapri</button><h2 id="detail-title">Podrobnosti igre</h2><div id="detail-body"></div></dialog>
+  <footer><a class="brand" href="/">PLAY /</a><span>TEHNOLOGIJE INTEGRACIJE IN DIGITALIZACIJ · NALOGA 5</span></footer>
+</body>
+</html>

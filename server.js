@@ -5,17 +5,25 @@ import { handleOpenData } from './naloga3/routes.js';
 import { scrapeFreeGames } from './parser/free.js';
 import { readFile } from 'node:fs/promises';
 import { readGames, scrapeGames } from './parser/steam.js';
+import { startGrpcServer } from './naloga5/service.js';
+import { createClient } from './naloga5/client.js';
+import { createGrpcHandler } from './naloga5/routes.js';
 
 try { loadEnvFile(new URL('./.env', import.meta.url)); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 const port = Number(process.env.PORT || 3000);
+const grpcAddress = process.env.GRPC_TARGET || '127.0.0.1:50051';
+const grpcServer = process.env.GRPC_TARGET ? null : (await startGrpcServer({ address: grpcAddress })).server;
+const grpcClient = createClient(grpcAddress);
+const handleGrpc = createGrpcHandler(grpcClient);
 const files = { '/': ['index.html', 'text/html'], '/app.js': ['app.js', 'text/javascript'], '/filters.js': ['filters.js', 'text/javascript'], '/style.css': ['style.css', 'text/css'] };
 let status = { running: false, message: '', error: null };
 let lastRun = 0;
 const send = (res, code, data) => { res.writeHead(code, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(data)); };
 
-http.createServer(async (req, res) => {
+const httpServer = http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
+    if (await handleGrpc(req, res, url)) return;
     if (await handleLlm(req, res, url)) return;
     if (await handleOpenData(req, res, url)) return;
     if (req.method === 'GET' && url.pathname === '/api/games') {
@@ -56,3 +64,13 @@ http.createServer(async (req, res) => {
     send(res, 404, { error: 'Stran ne obstaja.' });
   } catch (error) { send(res, 500, { error: 'Napaka pri branju lokalnih podatkov.', detail: error.message }); }
 }).listen(port, '127.0.0.1', () => console.log(`Lokalna aplikacija: http://127.0.0.1:${port}`));
+
+httpServer.once('error', error => {
+  console.error(`Spletnega strežnika ni mogoče zagnati: ${error.message}`);
+  grpcClient.close(); grpcServer?.forceShutdown(); process.exitCode = 1;
+});
+for (const signal of ['SIGINT', 'SIGTERM']) process.once(signal, () => {
+  grpcClient.close(); grpcServer?.forceShutdown();
+  httpServer.close(() => process.exit(0));
+  httpServer.closeAllConnections();
+});

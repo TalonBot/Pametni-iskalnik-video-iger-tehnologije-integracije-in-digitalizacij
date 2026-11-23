@@ -2,6 +2,10 @@
 
 **Avtor:** Tilen Gabor | **Predmet:** Tehnologije integracije in digitalizacij
 
+## Naloga 5 – gRPC
+
+Izvedba je v mapi [naloga5/](naloga5/README.md). Storitev `IgreService` ima štiri RPC klice: iskanje, podrobnosti, statistika in strežniško pretakanje. Stran sproti prikazuje igre in delne izračune, podpira filtre ter prekinitev toka. Zagon `npm ci` in `npm start`, nato **http://127.0.0.1:3000/naloga5/**. API ključ ni potreben. [Navodila, arhitektura in primer zagovora](naloga5/README.md). Testi: `npm run test:naloga5`.
+
 ## Naloga 4 – Uporaba LLM
 
 Izvedba je v mapi [naloga4/](naloga4/README.md). Osebna priporočila iger z Google Gemini: dinamični prompt iz uporabnikovih želja in Steamove zbirke, strukturiran JSON ter deserializacija v razreda LlmOdgovor in PriporociloIgre. V .env nastavi GEMINI_API_KEY po vzorcu .env.example, zaženi npm start in odpri **http://127.0.0.1:3000/naloga4/**. Testi: npm run test:naloga4. [Navodila za zagon in zagovor](naloga4/README.md).
